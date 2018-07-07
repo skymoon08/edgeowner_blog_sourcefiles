@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="google95784a9a78d968a0" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.proxy.ustclug.org/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+  <link rel="manifest" href="/images/manifest.json">
+
+
+  <meta name="msapplication-config" content="/images/browserconfig.xml" />
+
+
+
+  <meta name="keywords" content="JVM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="edgeowner" type="application/atom+xml" />
+
+
+
+
+
+
+
+<meta name="description" content="JVM内存结构（运行时数据区）JVM内存结构指得是：运行时数据区（Runtime Data Area），由 方法区(Method Area) 、堆(Heap) 、Java栈(Java Stack) 、本地方法栈(Native Method Stack)、程序计数器(Program Counter Register)。">
+<meta name="keywords" content="JVM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JVM内存结构(1)">
+<meta property="og:url" content="http://edgeowner.com/2016/04/23/JVM/jvm1/index.html">
+<meta property="og:site_name" content="edgeowner">
+<meta property="og:description" content="JVM内存结构（运行时数据区）JVM内存结构指得是：运行时数据区（Runtime Data Area），由 方法区(Method Area) 、堆(Heap) 、Java栈(Java Stack) 、本地方法栈(Native Method Stack)、程序计数器(Program Counter Register)。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://p5vswdxl9.bkt.clouddn.com/JVMRuntime">
+<meta property="og:updated_time" content="2016-04-23T14:29:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JVM内存结构(1)">
+<meta name="twitter:description" content="JVM内存结构（运行时数据区）JVM内存结构指得是：运行时数据区（Runtime Data Area），由 方法区(Method Area) 、堆(Heap) 、Java栈(Java Stack) 、本地方法栈(Native Method Stack)、程序计数器(Program Counter Register)。">
+<meta name="twitter:image" content="http://p5vswdxl9.bkt.clouddn.com/JVMRuntime">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '62TBHZV7K0',
+      apiKey: 'b9631b740708ee1be06f434de2d5fc49',
+      indexName: 'blogs',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索...","hits_empty":"未发现与 「${query}」相关的内容","hits_stats":"${hits} 条相关条目，使用了 ${time} 毫秒"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://edgeowner.com/2016/04/23/JVM/jvm1/"/>
+
+
+
+
+
+  <title>JVM内存结构(1) | edgeowner</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8f147cfd5524366f202c2f10937b129f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container  page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/edgeowner" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">edgeowner</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">多读书，读好书，少写bug</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-list"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://edgeowner.com/2016/04/23/JVM/jvm1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZhangSunny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="edgeowner">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">JVM内存结构(1)</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-23T21:20:43+08:00">
+                2016-04-23
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-04-23T22:29:00+08:00">
+                2016-04-23
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JVM/" itemprop="url" rel="index">
+                    <span itemprop="name">JVM</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2016/04/23/JVM/jvm1/" class="leancloud_visitors" data-flag-title="JVM内存结构(1)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,107
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="JVM内存结构（运行时数据区）"><a href="#JVM内存结构（运行时数据区）" class="headerlink" title="JVM内存结构（运行时数据区）"></a>JVM内存结构（运行时数据区）</h3><p>JVM内存结构指得是：运行时数据区（Runtime Data Area），由 <strong><em>方法区(Method Area) </em></strong>、<strong><em>堆(Heap) </em></strong>、<strong><em>Java栈(Java Stack) </em></strong>、<strong><em>本地方法栈(Native Method Stack)</em></strong>、<strong><em>程序计数器(Program Counter Register)</em></strong>。<br><img src="http://p5vswdxl9.bkt.clouddn.com/JVMRuntime" alt=""></p>
+<a id="more"></a>
+<hr>
+<h4 id="一、方法区-Method-Area"><a href="#一、方法区-Method-Area" class="headerlink" title="一、方法区(Method Area)"></a>一、方法区(Method Area)</h4><ol>
+<li><strong>作用</strong>： 用于存储已被虚拟机加载的类信息、常量、静态变量、即时编译后的代码等数据。此区域内存回收目标主要针对常量池回收和对类型的卸载回收。 </li>
+<li><strong>特点</strong>：线程共享 。</li>
+<li><strong>永久代的疑问(PerGen)</strong>：该内存区域一般被称为”<strong>永久代(Permanent Generation)</strong> “，二者并不等价，设计之初就把GC分代收集扩展至方法区，或者说使用永久代实现方法区而已。</li>
+<li><strong>运行时常量池</strong>：方法区的一部分，存放<strong><em>编译期</em></strong>生成的<strong>各种字面量</strong>(“zdy”,”123”等)和 <strong>符号引用</strong> 。编译器和运行期的intern()都可以将常量放入池中。受方法区限制，常量池无法申请到内存时会抛出OutOfMemoryError异常。运行时常量池具有动态性，并非只有Class文件中的内容才能进入运行时常量池，<strong><em>运行期间</em></strong>也能将新的常量放入池中。如String.intern（）方法。</li>
+<li><strong>方法区储存类的信息</strong>： <ol>
+<li><code>Classloader引用</code>；</li>
+<li><code>运行时常量池</code>：数值型常量、字段引用、方法引用、属   性；  </li>
+<li><code>字段数据</code>：针对每个字段的信息、字段名、类型、修饰符、属性；</li>
+<li><code>方法数据</code>：每个方法、方法名、返回值类型、参数类型、修饰符、属性；</li>
+<li><code>方法代码</code>：每个方法、字节码、操作数栈大小、局部变量大小、局部变量表、异常表、每个异常处理器、开始点、结束点、异常处理代码的程序计数器偏移量、被捕获异常类对应的常量池下标；</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><strong><em> 字面量(literal) </em></strong>：由字母，数字等构成的字符串或者数值，用于表达源代码中一个固定值的表示法(notation)。几乎所有计算机编程语言都具有对基本值的字面量表示，诸如：整数、浮点数以及字符串；而有很多也对布尔类型和字符类型的值也支持字面量表示；还有一些甚至对枚举类型的元素以及像数组、记录和对象等复合类型的值也支持字面量表示法。</li>
+<li><strong><em> 符号引用 </em></strong>：简单地说就是，符号引用存在class文件中的常量池，包括类和接口的全限定名、字段的名称和描述符以及方法的名称和描述符。jvm加载class的时候就可以凭着这三者进行动态连接，得到具体的内存地址。占用的数据结构在常量池项目类型有，例如类或接口的符号引用结构为u1的tag和u2的name_index。</li>
+</ul>
+<hr>
+<h4 id="二、堆-Heap"><a href="#二、堆-Heap" class="headerlink" title="二、堆(Heap)"></a>二、堆(Heap)</h4><ol>
+<li><strong> 作用 </strong>：被所有线程运行时共享的内存区域，JVM启动之后，存放对象实例和数组，内部会划出多个线程私有的分配缓冲区(Thread Location Allocation Buffer ,<strong>TLAB</strong>)。该存储区域物理上可以是不连续空间，但是逻辑上一定要连续。</li>
+<li><strong> 特点 </strong>：是GC管理的主要区域，由于GC（垃圾收集器）是采用分代收集算法,根据对象存活率，堆还可以分为<strong>新生代</strong>、<strong>老年代</strong>、<strong>永久代</strong>。</li>
+<li><p><strong> 分类 </strong>：</p>
+<blockquote>
+<p><em><strong>新生代(Young Generation)</strong></em> ：方法中去new一个对象，那这方法调用完毕后，对象就会被回收，这就是一个典型的新生代对象。 每次使用Eden和其中一块Survivor，当回收时，将Eden和Survivor中还存活的对象一次性地复制到另外一块Survivor空间上，最后清理Eden和刚才用过的Survivor空间。<strong><em> HotSpot虚拟机默认Eden和Survivor的大小比例是8:1 </em></strong>，也就是说，每次新生代中可用内存空间为整个新生代容量的90%（80%+10%），只有10%的空间会被浪费。 98%的对象可回收只是一般场景下的数据，没办法保证每次回收都只有不多于10%的对象存活，当Survivor不够用时，需要依赖于老年代进行分配担保，所以<strong><em> 大对象 </em></strong>直接进入老年代。同时长期存活的对象进入老年代（虚拟机给每个对象定义一个年龄计数器）。<br><code>年轻代内存又被分成三部分</code>：  </p>
+<ol>
+<li><code>Eden空间</code>：对象优先分配在Eden区，若Eden区无足够的空间，虚拟机执行一次Minor GC。对象被创建时首先放到这个区域，进行垃圾回收后，不能被回收的对象被放到空的Survivor区域。</li>
+<li><code>Survivor Space幸存者区</code>：用于保存在Eden Space内存区域中经过垃圾回收后没有被回收的对象。Survivor有两类，分别为<strong><em>To Suvivor </em></strong> 和 <strong><em>From Suvivor</em></strong>两个区域，这两个区域空间大小是一样的执行：<br>   &emsp;&emsp;a.<code>From Survivor空间</code>：<br>   &emsp;&emsp;b.<code>To Survivor空间</code> ：      </li>
+<li><code>执行回收的内存运行</code>： 执行垃圾回收时Eden区域不能被回收的对象被放入到空的Suvivor(也就是<strong>To Survivor</strong>，同时Eden区域的内存会在垃圾回收的过程中全部释放)，另一个Survivor(即From Survivor)里不能被回收的对象也会被放入到Survivor(即To Survivor)，然后To Survivor和 From Survivor的标记会互换，始终保证一个Survivor是空的。 </li>
+</ol>
+</blockquote>
+<blockquote>
+<p><em><strong>老年代(Old Generation)</strong></em> ：<strong> 老年代空间大小&emsp;=&emsp;堆空间大小&emsp;–&emsp;年轻代大空间大小 </strong>   </p>
+</blockquote>
+</li>
+<li><p><strong> 年轻代的垃圾回收 </strong>：<strong><em>Eden Space(伊甸园) </em></strong>和<strong><em>Suvivor Space </em></strong>都属于新生代，新生代中执行垃圾回收被称为Minor GC(由于是对新生代进行垃圾回收，所以被称为Young GC)，每次Young GC 后留下来的对象age +1。</p>
+<blockquote>
+<p><em><strong> Eden:From:TO =8:1:1</strong></em><br> 由于新生代中90%的对象都是”朝生夕死”，采用复制算法是比较合理的，首先只移动了存活下来的对象(比较少数),其次内存在移动到To区域后是有顺序的，不存在内存碎片。值得一提的是，假如在一次Minor GC时,<code>Eden中存活的对象</code>+<code>From中存活的对象</code>&gt;<code>To的剩余空间</code>，则会通过担保机制将对象直接转移到Old Gen ,如果Old Gen的内存空间也不够，则进行一次Full GC .当<strong><em> 对象的年龄到达15岁时会转移到Old Gen(可通过参数配置，一般不建议更改) </em></strong></p>
+</blockquote>
+</li>
+<li><p><strong> 使用方式 </strong>：Java堆可以处于物理上不连续的内存空间中，只要逻辑上是连续的即可，就像我们的磁盘空间一样。在实现时，既可以实现成固定大小的，也可以是可扩展的，当前主流的虚拟机都是按照可扩展来实现的（通过-Xmx和-Xms控制）。<strong><em> 如果在堆中没有内存完成实例分配，并且堆也无法再扩展时，将会抛出OutOfMemoryError异常。 </em></strong></p>
+</li>
+<li><code>对象分配规则</code>：<br> <code>1.对象优先分配在Eden区</code>：若Eden区没有足够的空间时，虚拟机执行一次Minor GC；<br> <code>2.大对象(大对象是指需要大量连续内存空间的对象)直接进入老年代</code>：这样做目的是避免在Eden区和两个Survivor区之间发生大量的内存拷贝(新生代采用 <strong><em>复制算法 </em></strong> 收集内存)；<br> <code>3.长期存活的对象进入老年代</code>：虚拟机为每个对象定义一个年龄计数器，如果对象经过了1次Minor GC那么对象会进入Survivor区，之后每经过一次Minor GC那么对象年龄加 1，直到达到阀值，对象进入老年区；<br> <code>4.动态判断对象的年龄</code>：如果Survivor区中相同年龄的所有对象大小的总和大于Survivor空间的一半，年龄大于或等于该年龄的对象可以直接进入老年代；<br> <code>5.空间分配担保</code>：每次每次进行Minor GC时，JVM会计算Survivor区移至<strong>老年区的对象</strong>的平均大小，如果这个值大于老年区的剩余值大小则进行一次Full GC，如果小于检查HandlePromotionFailure设置，如果true则只进行Monitor GC，如果false则进行Full GC；    </li>
+</ol>
+<hr>
+
+      
+    </div>
+    
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>本文标题:</span><a href="/2016/04/23/JVM/jvm1/">JVM内存结构(1)</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 ZhangSunny 的个人博客">ZhangSunny</a></p>
+  <p><span>发布时间:</span>2016年04月23日 - 21:04</p>
+  <p><span>最后更新:</span>2016年04月23日 - 22:04</p>
+  <p><span>原始链接:</span><a href="/2016/04/23/JVM/jvm1/" title="JVM内存结构(1)">http://edgeowner.com/2016/04/23/JVM/jvm1/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://edgeowner.com/2016/04/23/JVM/jvm1/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+      
+    </div>
+
+    <div>
+      
+         <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="ZhangSunny 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="ZhangSunny 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    <!-- 
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    ZhangSunny
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://edgeowner.com/2016/04/23/JVM/jvm1/" title="JVM内存结构(1)">http://edgeowner.com/2016/04/23/JVM/jvm1/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+    -->
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JVM/" rel="tag"><i class="fa fa-tag"></i> JVM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/23/JavaMultiThread/thread-sample-introduce/" rel="next" title="多线程相关知识点">
+                <i class="fa fa-chevron-left"></i> 多线程相关知识点
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/24/JVM/jvm2/" rel="prev" title="JVM内存结构(2)">
+                JVM内存结构(2) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!--MOB SHARE BEGIN-->
+<div class="-hoofoo-share-title">分享到：</div>
+<div class="-hoofoo-share-buttons">
+    <div class="-mob-share-weibo -hoofoo-share-weibo -hoofoo-share-ui-button"><i class="fa fa-weibo" aria-hidden="true"></i></div>
+    <div class="-mob-share-weixin -hoofoo-share-weixin -hoofoo-share-ui-button"><i class="fa fa-weixin" aria-hidden="true"></i></div>
+    <div class="-mob-share-qq -hoofoo-share-qq -hoofoo-share-ui-button"><i class="fa fa-qq" aria-hidden="true"></i></div>
+    <div class="-mob-share-twitter -hoofoo-share-twitter -hoofoo-share-ui-button"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+    <div class="-hoofoo-share-more -hoofoo-share-ui-button -mob-share-open"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+</div>
+<div class="-mob-share-ui" style="display: none">
+    <ul class="-mob-share-list">
+        <li class="-mob-share-weibo"><p>新浪微博</p></li>
+        <li class="-mob-share-weixin"><p>微信</p></li>
+        <li class="-mob-share-qzone"><p>QQ空间</p></li>
+        <li class="-mob-share-qq"><p>QQ好友</p></li>
+        <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+        <li class="-mob-share-renren"><p>人人网</p></li>
+        <li class="-mob-share-kaixin"><p>开心网</p></li>
+        <li class="-mob-share-douban"><p>豆瓣</p></li>
+        <li class="-mob-share-youdao"><p>有道云笔记</p></li>
+        <li class="-mob-share-mingdao"><p>明道</p></li>
+        <li class="-mob-share-pengyou"><p>朋友网</p></li>
+        <li class="-mob-share-facebook"><p>Facebook</p></li>
+        <li class="-mob-share-twitter"><p>Twitter</p></li>
+        <li class="-mob-share-pocket"><p>Pocket</p></li>
+        <li class="-mob-share-google"><p>Google+</p></li>
+        <li class="-mob-share-tumblr"><p>Tumblr</p></li>
+        <li class="-mob-share-instapaper"><p>Instapaper</p></li>
+        <li class="-mob-share-linkedin"><p>Linkedin</p></li>
+    </ul>
+    <div class="-mob-share-close">取消</div>
+</div>
+<div class="-mob-share-ui-bg"></div>
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=2551e11c5d3ee"></script>
+<!--MOB SHARE END-->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="ZhangSunny" />
+            
+              <p class="site-author-name" itemprop="name">ZhangSunny</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">47</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/edgeowner" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://weibo.com/u/2003887723/home" target="_blank" title="Weibo">
+                    
+                      <i class="fa fa-fw fa-weibo"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://plus.google.com/u/0/113974455569024478598" target="_blank" title="Google">
+                    
+                      <i class="fa fa-fw fa-google"></i></a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                推荐博客
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/xiexj/" title="xiexj" target="_blank">xiexj</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://github.com/CyC2018/Interview-Notebook/blob/master/notes/Java%20%E5%B9%B6%E5%8F%91.md" title="CyC2018" target="_blank">CyC2018</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" title="reuixiy" target="_blank">reuixiy</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://yangbingdong.com/2017/build-blog-hexo-advanced/" title="yangbingdong" target="_blank">yangbingdong</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://yemengying.com/" title="yemengying" target="_blank">yemengying</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://int64.me/index.html" title="cwen" target="_blank">cwen</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://taozj.net/201612/study-conclusion-stage.html" title="taozj" target="_blank">taozj</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://bravemind.github.io/blog" title="bravemind" target="_blank">bravemind</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.iocoder.cn/TCC-Transaction/dubbo-support/?juejin&2018-04-29" title="芋道源码" target="_blank">芋道源码</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.ruanyifeng.com/blog/developer/" title="阮一峰" target="_blank">阮一峰</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://evanyou.me/" title="尤雨溪" target="_blank">尤雨溪</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://github.com/Meituan-Dianping" title="美团点评" target="_blank">美团点评</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM内存结构（运行时数据区）"><span class="nav-number">1.</span> <span class="nav-text">JVM内存结构（运行时数据区）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、方法区-Method-Area"><span class="nav-number">1.1.</span> <span class="nav-text">一、方法区(Method Area)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、堆-Heap"><span class="nav-number">1.2.</span> <span class="nav-text">二、堆(Heap)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<div class="copyright">&copy; 2014 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ZhangSunny</span>
+
+
+
+  <span class="post-meta-divider">|</span> 
+  <span class="post-meta-item-icon"> <i class="fa fa-area-chart"></i></span> 
+  <div class="theme-info">
+    <div class="powered-by"></div>
+    <span class="post-count">博客全站共32.2k字</span>
+  </div>
+    <div class="powered-by">
+      <span class="post-meta-divider">|</span> 
+        <i class="fa fa-user-md"></i>
+       <span id="busuanzi_container_site_uv">  </span>
+          本站访客数:
+         <span id="busuanzi_value_site_uv"> </span>
+     </div>
+  <div class="powered-by">
+      <span class="post-meta-divider">|</span>   
+      <i class="fa fa-group"></i>
+      <span style="float:right">本站总访问量：<span><span style="float:right" id="busuanzi_value_site_pv"></span>
+  </div>
+
+
+
+
+
+  <!--原底部统计设置-->
+  <!-- 
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">32.2k</span>
+   
+  -->
+</div>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("LitAfQhE9K3vBezhq9DeaJAM-9Nh9j0Va", "piVhzXHEswdUNxk42QLkuT1j");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.3"></script>
+
+
+  
+
+  
+<script type="text/javascript">
+    //微信二维码点击背景关闭
+    $('body').delegate('.-mob-share-weixin-qrcode-bg','click', function(){
+         $(".-mob-share-weixin-qrcode-close").trigger("click");
+    }); 
+</script>
+
+
+<!--   -->
+
+</body>
+</html>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Mac下的Linux快捷操作]]></title>
+    <url>%2F2018%2F05%2F01%2FMac%E4%B8%8B%E7%9A%84Linux%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%2FMac%E4%B8%8B%E7%9A%84Linux%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[一、移动光标123456789101112131. 移动到行尾"$"，移动到行首"0"(数字)，移动到行首第一个字符处"^"2. 移动到段首"&#123;"，移动到段尾"&#125;"3. 移动到下一个词"w"，移动到上一个词"b"4. 移动到文档开始"gg"，移动到文档结束"G"5. 跳到第n行"ngg" 或 "nG" 或 ":n"6. 移动光标到屏幕顶端"H"，移动到屏幕中间"M"，移动到底部"L"7. 移动到上次编辑文件的位置 "`" 二、编辑操作123456789101112131415161718192021222324252627282930313233343536371. 光标后插入"a", 行尾插入"A"2. 后插一行插入"o"，前插一行插入"O"3. 删除字符插入"s"， 删除正行插入"S"4. 光标前插入"i"，行首插入"I"5. 删除一行"dd"，删除后进入插入模式"cc"或者"S"6. 删除一个单词"dw"，删除一个单词进入插入模式"cw"7. 删除一个字符"x"或者"dl"，删除一个字符进入插入模式"s"或者"cl"8. 粘贴"p"，交换两个字符"xp"9. 交换两行"ddp"10. 复制"y"，复制一行"yy"11. 拷贝当前行 "yy"或者"Y"12. 撤销"u"，重做"ctrl + r"13. 删除到行尾可以使用"D"或"C"14. 删除当前字符 "x"15. "&gt;&gt;"缩进所有选择的代码16. "&lt;&lt;" 反缩进所有选择的代码17. 合并两行" J"18. 若不想保存文件，而重新打开":e!"19. 若想打开新文件 ":e filename"，然后使用"ctrl + ^"进行文件切换 三、Vim的简单配置 &emsp;&emsp;到用户目录下新建文件为 .vimrc，然后在其中写下如下配置： 123456789101112131. syntax enable //语法高亮 2. set number //显示行号3. set cursorline //突出显示当前行4. set ruler //打开状态栏标尺5. set shiftwidth=4 //设定 &lt;&lt; 和 &gt;&gt; 命令移动时的宽度为 46. set softtabstop=4 //使得按退格键时可以一次删掉 7. set tabstop=4 //设定 tab 长度为 4]]></content>
+      <categories>
+        <category>JVM</category>
+      </categories>
+      <tags>
+        <tag>Linux系列</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Nexus本地仓库搭建]]></title>
+    <url>%2F2018%2F04%2F27%2Flocal-nexus-plugins%2Flocal-nexus-plugins%2F</url>
+    <content type="text"><![CDATA[参考链接 Maven私服仓库管理： Nexus 3.0 Nexus3.x 安装文档]]></content>
+      <categories>
+        <category>环境搭建</category>
+      </categories>
+      <tags>
+        <tag>nexus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[concurrent source code read]]></title>
+    <url>%2F2018%2F04%2F18%2FConcurrentSourceCodeRead%2Fconcurrent-source-code-read%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Spring source code read]]></title>
+    <url>%2F2018%2F04%2F18%2FSpringSourceCodeRead%2Fspring-source-code-read%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[JDK source code read]]></title>
+    <url>%2F2018%2F04%2F18%2FJDKSourceCodeRead%2FJDK-source-code-read%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Java序列化]]></title>
+    <url>%2F2018%2F03%2F13%2FJavaPremium%2FJava%E5%BA%8F%E5%88%97%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Serialize</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java NIO]]></title>
+    <url>%2F2018%2F03%2F13%2FJavaPremium%2FJava-NIO%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Java LDAP]]></title>
+    <url>%2F2018%2F03%2F13%2FJavaPremium%2FJava-LDAP%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Mysql索引介绍]]></title>
+    <url>%2F2017%2F05%2F06%2FMysql%2Fmysql-index%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>示例代码</category>
+      </categories>
+      <tags>
+        <tag>Code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[单例模式]]></title>
+    <url>%2F2017%2F05%2F06%2FDesignPattern%2FSingletonPattern%2F</url>
+    <content type="text"><![CDATA[单例模式]]></content>
+      <categories>
+        <category>示例代码</category>
+      </categories>
+      <tags>
+        <tag>Code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[浅析线程安全]]></title>
+    <url>%2F2017%2F03%2F02%2FJavaMultiThread%2Fthread-safety-demo%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Java多线程</category>
+      </categories>
+      <tags>
+        <tag>Thread</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[日常开发工具集（1）]]></title>
+    <url>%2F2017%2F03%2F01%2FDevTools%2Fdeveloping-tools%2F</url>
+    <content type="text"><![CDATA[&emsp;&emsp;日常工作中只要时方便开发的部分工具的用途及资源会在此文介绍，欢迎广大技术蜀黍添加。 Linux命令大全&emsp;&emsp;Linux命令大全是Linux各个命令大全的搜索集合，这里可以按照不同的Linux命令操作类型搜索出想要的Linux命令操作。 Java源代码搜索Grepcode(资源地址)是面向Java开发人员的网站，这里可通过Java的project 、classes等关键字在线查看它对应的源码，知道对应的project、classes等信息。更方便的是，能提供不同版本的源代码在线查看：jar包 、源码jar包、doc下载。同样，也可以使用xxx-1.1.1.jar类似这样的名字直接找到对应的jar包，从而下载。 开源代码以及文档搜索&emsp;&emsp;SearchCode(资源地址)是一个源码搜索引擎，目前支持从Github 、Bitbucket、Google Code、CodePlex、SourceForge 和 Fedora Project 平台搜索公开的源码。 电子书搜索&emsp;&emsp;鸠摩搜书(资源地址)是一个比较不错的电子书搜索网站。内容也比较全。 网盘资源搜索&emsp;&emsp;盘搜(资源地址)可以通过这个网站搜索百度网盘上面的各种资源。 无版权图片搜索&emsp;&emsp;Unsplash(资源地址)是我用过的最好的网站，不需要登录，图片很高请，也比较全。唯一的缺点就是需要英文搜搜 在线UML制图&emsp;&emsp;ProcessOn(资源地址)是一个在线协作绘图平台，为用户提供最强大、易用的作图工具!支持在线创作流程图 、BPMN 、UML图 、UI界面原型设计、iOS界面原型设计等。 Json在线验证及格式化(1)&emsp;&emsp;json.cn(资源地址)是比较不错的，不仅支持Json格式的验证及格式化，还可以将Json格式压缩成普通文本等，以及查询Json组件和Json解析相关代码好用功能。 Json在线验证及格式化(2)&emsp;&emsp;bejson.com(资源地址)本人推荐这个，Bejson 可以在线支持格式化JSON数据，并检测Json数据问题 Json生成java类&emsp;&emsp;bejson(资源地址)Json是目前JavaWeb中数据传输的主要格式，很多时候会有把Json转成Java对象的需求。有时候合作方会提供一个Json的样例，需要我们自己定义Java类，这时候这个工具就派上用场了。 SQL自动生成Java代码&emsp;&emsp;Json(资源地址)是目前JavaWeb中数据传输的主要格式，很多时候会有把json转成Java对象的需求。有时候合作方会提供一个json的样例，需要我们自己定义Java类，这时候这个工具就派上用场了。 Maven依赖查询&emsp;&emsp;Mvnrepository(资源地址)查询开源的Java的jar包版本依赖标签 Cron表达式生成&emsp;&emsp;Pdtools(资源地址)用于配置定时任务的cron表达式。 正则验证&emsp;&emsp;(资源地址)Java开发对正则表达式肯定不陌生。站长工具提供的正则验证还不错。 正则代码生成&emsp;&emsp;(资源地址)站长工具提供的正则代码生成。可以一键生成身份证号、邮箱、手机号等验证的正则表达式。 时间戳转换&emsp;&emsp;(资源地址)时间戳(英语：Timestamp）是指在一连串的资料中加入辨识文字，如时间或日期，用以保障本地端（local）资料更新顺序与远端（remote）一致。Java中很多地方都会用到时间戳，也经常会使用这种转换工具。 加密解密&emsp;&emsp;(资源地址)加密解密也是JavaWeb可能会经常遇到的，有的时候我们需要验证加密算法是否正确，或者要解密等场景，就需要一个在线工具。 在线调色板&emsp;&emsp;(资源地址)常用MarkDown字体配色使用获取RGB代码例如：1&lt;font face="微软雅黑" color=#9900ff size=2&gt;-Xms1024m -Xmx1024m -XX:PermSize=512M -XX:MaxPermSize=1024m -Dfile.encoding=utf-8 &lt;/font&gt; CSS样式参照&emsp;&emsp;(资源地址)常用字体颜色修改以及相应名称等设置可参照其目录(翻墙)： ASCII ART生成&emsp;&emsp;ASCII ART生成(资源地址) 常用对照表 ASCII对照表 HTTP状态码 HTTP Content-type TCP/UDP常见端口参考 HTML转义字符 RGB颜色参考 网页字体参考]]></content>
+      <categories>
+        <category>开发工具集</category>
+      </categories>
+      <tags>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据库的锁]]></title>
+    <url>%2F2016%2F11%2F06%2FMysql%2FdateSourceLock%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>并发控制相关知识点</category>
+      </categories>
+      <tags>
+        <tag>并发控制</tag>
+        <tag>锁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[浅析数据库读现象]]></title>
+    <url>%2F2016%2F11%2F05%2FMysql%2FdataSourceRead%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>并发控制相关知识点</category>
+      </categories>
+      <tags>
+        <tag>并发控制</tag>
+        <tag>锁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java CAS]]></title>
+    <url>%2F2016%2F10%2F02%2FJavaPremium%2FJava-CAS%2F</url>
+    <content type="text"><![CDATA[CAS介绍&emps;&emps;CAS 是现代操作系统，解决并发问题的一个重要手段，本文从eureka源码入手，介绍Java中的CAS 。&emps;&emps;CAS(Compare And Swap)，字面理解就是“比较并交换”，一个CAS涉及到的操作如下：假设内存中的原数据$V$，旧的预期值$A$，需要修改的新值$B$ 比较$A$与$V$是否相等。（比较） 如果比较相等，将$B$写入$V$。（交换） 返回操作是否成功。&emps;&emps;当多个线程同时对某个资源进行CAS操作，只能有一个线程操作成功，但是并不会阻塞其他线程，其他线程只会收到操作失败的信号。其实CAS就是一个乐观锁。 CAS实现解析AtomInteger]]></content>
+      <categories>
+        <category>并发控制相关知识点</category>
+      </categories>
+      <tags>
+        <tag>并发控制</tag>
+        <tag>锁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[乐观锁与悲观锁的实际应用]]></title>
+    <url>%2F2016%2F10%2F01%2FLock%2Foptimistic-pessimistic%2F</url>
+    <content type="text"><![CDATA[高并发场景&emsp;&emsp;首先假设一个业务场景：数据库中有一条数据，需要获取到当前的值，在当前值的基础上$+10$，然后再更新回去。如果此时有两个线程同时并发处理，第一个线程拿到数据是$10，+10=20$更新回去。第二个线程原本是要在第一个线程的基础上再$+20=40$,结果由于并发访问取到更新前的数据为$10，+20=30$。这就是典型的存在中间状态，导致数据不正确。来看以下的例子：并发所带来的问题，和上文提到的类似，这里有一张price表，表结构如下： 123456789CREATE TABLE `price` ( `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键', `total` decimal(12,2) DEFAULT '0.00' COMMENT '总值', `front` decimal(12,2) DEFAULT '0.00' COMMENT '消费前', `end` decimal(12,2) DEFAULT '0.00' COMMENT '消费后', `add_time` timestamp NULL DEFAULT NULL COMMENT '添加时间', `update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP, COMMENT '更新时间', PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 单测例子如下(Github代码地址)： 12345678910111213141516//就一个主线程，循环100次，每次把front的值减去10，再写入一次流水记录，正常情况是写入的每条记录都会每次减去10。 @Test public void singleCounsumerTest() &#123; for (int i = 0; i &lt; 100; i++) &#123; Price price = priceMapper.selectByPrimaryKey(1); int ron = 10; price.setFront(price.getFront().subtract(new BigDecimal(ron))); price.setEnd(price.getEnd().add(new BigDecimal(ron))); price.setTotal(price.getFront().add(price.getEnd())); priceMapper.updateByPrimaryKey(price); price.setId(null); priceMapper.insertSelective(price); &#125; &#125; 执行结果如下图：可以看到确实是每次都递减10，但是如果是多线程的情况下会是如何呢？（代码PriceController）1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859 @Slf4j@RestController@RequestMapping("/price")public class PriceController &#123; @Autowired private PriceApplication priceApplication; @Autowired private PriceMapper priceMapper; @Autowired private ThreadPoolConfig config; /** * 多线程并发执行Demo ,无锁场景下的更新 * * @param priceVO * @return message */ @RequestMapping(value = "/update", method = RequestMethod.POST) public ResponseEntity&lt;Map&lt;String, Object&gt;&gt; updatePrice(@RequestBody PriceVO priceVO) &#123; try &#123; if (priceVO == null) &#123; throw new BizException(BizException.NUM_VALIDATION, "priceVO is null"); &#125; for (int i = 0; i &lt; 10; i++) &#123; final int count = i; Thread thread = new Thread(new Runnable() &#123; @Override public void run() &#123; toUpdatePrice(count); &#125; &#125;); config.submit(thread); &#125; return WebUtil.success("price更新成功"); &#125; catch (BizException ex) &#123; log.error("更新价格失败", ExceptionUtils.getFullStackTrace(ex)); return WebUtil.error(ex.getErrorMessage()); &#125; &#125; private void toUpdatePrice(int count) &#123; log.info(MessageFormat.format("thread create start:&#123;0&#125; ", count)); Price price = priceMapper.selectByPrimaryKey(1); int ron = 10; price.setFront(price.getFront().subtract(new BigDecimal(ron))); price.setEnd(price.getEnd().add(new BigDecimal(ron))); priceMapper.updateByPrimaryKey(price); price.setId(null); priceMapper.insertSelective(price); log.info(MessageFormat.format("thread create end:&#123;0&#125; ", count)); &#125;&#125; 关于线程池的使用今后会仔细探讨。这里就简单理解为有10个线程并发去处理上面单线程的逻辑，来看看结果怎么样？ 会看到明显的数据错误，导致错误的原因自然就是有线程读取到了中间状态进行了错误的更新。进而有了以下两种解决方案：悲观锁 和乐观锁 。 悲观锁&emsp;&emsp;简单理解下悲观锁：当一个事务锁定了一些数据之后，只有当当前锁提交了事务，释放了锁，其他事务才能获得锁并执行操作。使用方式如下：首先要关闭MySQL的自动提交：set autocommit = 0;123456bigen --开启事务select id, total, front, end from price where id=1 for update insert into price values(?,?,?,?,?)commit --提交事务 这里使用select for update的方式利用数据库开启了悲观锁，锁定了id=1的这条数据(注意：这里除非是使用了索引会启用行级锁，不然是会使用表锁，将整张表都锁住。)。之后使用commit提交事务并释放锁，这样下一个线程过来拿到的就是正确的数据。悲观锁一般是用于并发不是很高，并且不允许脏读等情况。但是对数据库资源消耗较大。 乐观锁&emsp;&emsp;乐观锁是首先假设数据冲突很少，只有在数据提交修改的时候才进行校验，如果冲突了则不会进行更新。通常的实现方式增加一个version字段，为每一条数据加上版本。每次更新的时候version+1，并且更新时候带上版本号。实现方式如下：新建了一张price_version表：12345678910CREATE TABLE `price_version` ( `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键', `total` decimal(12,2) DEFAULT '0.00' COMMENT '总值', `front` decimal(12,2) DEFAULT '0.00' COMMENT '消费前', `end` decimal(12,2) DEFAULT '0.00' COMMENT '消费后', `version` int(11) DEFAULT '0' COMMENT '并发版本控制', `add_time` timestamp NULL DEFAULT NULL COMMENT '添加时间', `update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间', PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 更新数据的SQL：1234567&lt;update id="updateByVersion" parameterType="com.demo.saber.infrastructure.po.PriceVersion"&gt; update price_version set front = #&#123;front, jdbcType=DECIMAL&#125;, version = version + 1 where id = #&#123;id, jdbcType=INTEGER&#125; and version = #&#123;version, jdbcType=INTEGER&#125; &lt;/update&gt; 调用方式：1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556@Slf4j@RestController@RequestMapping("/priceverion")public class PriceVersionController &#123; @Autowired private PriceVersionMapper priceVersionMapper; @Autowired private ThreadPoolConfig config; /** * 多线程并发执行Demo ,乐观锁场景下的更新 * * @param priceVersionVO * @return message */ @RequestMapping(value = "/threadPriceVersion", method = RequestMethod.POST) public ResponseEntity&lt;Map&lt;String, Object&gt;&gt; updatePrice(@RequestBody PriceVersionVO priceVersionVO) &#123; try &#123; if (priceVersionVO == null) &#123; throw new BizException(BizException.NUM_VALIDATION, "priceVersionVO is null"); &#125; for (int i = 0; i &lt; 10; i++) &#123; final int count = i; Thread thread = new Thread(new Runnable() &#123; @Override public void run() &#123; PriceVersion priceVersion = priceVersionMapper.selectByPrimaryKey(1); int ron = 10; //"本次消费=" + ron log.info(MessageFormat.format("当前线程(&#123;0&#125;)本次消费=&#123;1&#125;", count, ron)); priceVersion.setFront(new BigDecimal(ron)); int backflag = priceVersionMapper.updateByVersion(priceVersion); if (backflag == 0) &#123; log.error(MessageFormat.format("当前线程(&#123;0&#125;)更新失败", count)); &#125; else &#123; log.error(MessageFormat.format("当前线程(&#123;0&#125;)更新成功", count)); &#125; &#125; &#125;); config.submit(thread); &#125; return WebUtil.success("priceVersion更新成功"); &#125; catch (BizException ex) &#123; log.error("更新priceVersion失败", ExceptionUtils.getFullStackTrace(ex)); return WebUtil.error(ex.getErrorMessage()); &#125; &#125;&#125; 处理逻辑 ：开了三个线程生成了20以内的随机数更新到front字段。调用该接口时日志如下：可以看到线程1、2、3、4都更新失败了，线程0更新成功了。 乐观锁在实际应用相对较多，它可以提供更好的并发访问，并且数据库开销较少，但是有可能存在脏读的情况。 代码地址edgeowner 参考资源SSM (十五) 乐观锁与悲观锁的实际应用]]></content>
+      <categories>
+        <category>并发控制相关知识点</category>
+      </categories>
+      <tags>
+        <tag>并发控制</tag>
+        <tag>锁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[事务知识点]]></title>
+    <url>%2F2016%2F10%2F01%2FTransaction%2Ftransaction%2F</url>
+    <content type="text"><![CDATA[事务&emsp;&emsp;本文主要介绍事务的相关知识点，同时也为后续讲解乐观锁和悲观锁作铺垫，先对以下事务相关的知识点：ACID、事物的常见问题以及事务的隔离级别先做介绍，至于锁后续会有专题详细介绍。事务就是一组原子性的sql，或者一个独立的工作单元，事务可以就Mysql引擎来说的话就是要么全部执行这一组sql语句（CURD组合），要么全部都不执行（比如其中一条语句失败会导致这一组语句全部失败）。事务是并发控制的单元，是用户定义的一个操作序列。这些操作要么都做，要么都不做，是一个不可分割的工作单位，说白了就是为了保证系统始终处于一个完整且正确的状态。 事务特性：ACID事务的ACID特性： A：Atomiciy(原子性)：一个事物必须保证其中的操作要么全部执行，要么全部回滚，不可能存在只执行了一部分这种情况出现。简单说就是事务是一个不可分隔的工作单位，事务中的操作要么都发生，要么都不发生； 事务包含的全部操作是一个不可分割的整体，要么全部执行，要么全部都不执行。 C：Consistency(一致性)：数据必须保证从一种一致性的状态转换为另一种一致性状态。也就是事务开始到结束的时间段内，事务前后数据的完整性必须保证一致； 例如：事务之前A,B两个账户的总和是10万(A:4W,B:6W),现在A转账B2万(A:2W,B:8W),A,B账户总和依旧应该是10万，如果不是10万的话，则事务前后对于账户总和这种资源是不一致的。 I：Isolation(隔离性)：在一个事物未执行完毕时，通常会保证其他Session无法看到这个事务的执行结果。也就是说多个用户并发访问数据库时，一个用户的事物不能被其他用户的事物所干扰，多个并发事务之间数据要相互隔离。数据库系统提供一定的隔离机制，保证事务在不受外部并发操作影响的”独立”环境执行； 主要规定了各个事务之间相互影响的程度，主要用于规定多个事务访问同一数据资源，各个事务对该数据资源访问的行为。 D：Durability(持久性)：事务一旦commit，则数据就会保存下来，即使提交完之后系统崩溃，数据也不会丢失。 事务一旦完成，要将数据所做的变更记录下来(冗余存储或多数据网络备份)。 事务常见问题更新丢失(Lost Update)： 场景：假定两个事物有$A$和$B$，事务$A$和事物$B$同时获得相同的数据，然后在各自的事物中修改数据M，事先$A$先提交事物，数据M假如为$M+$，事务$B$后提交事物，数据$M$变成了$M++$，最终结果变成$M++$，覆盖了事物$A$的更新。 原因：当多个事务选择同一行操作，并且都是基于最初选定的值，由于每个事务都不知道其他事务的存在，就会发生更新覆盖的问题。类比Github提交冲突。 例子： 事物$A$ 事物$B$ 读取 $X=100$ 读取 $X=100$ 写入 $X=X+100$ 事物结束 $X = 200$ 写入 $X =X+100$ 事物结束 $X=300$(事物A的数据更新丢失) 脏读(Dirty Reads)： 场景：允许事物B可以读到事物A修改而未提交的数据，可能会造成脏读（脏读本质就是无效数据，只有当事物$A$回滚，那么事物B读到的数据才为无效的，所以这里只是可能造成脏读，当事物$A$不回滚的时候，事物$B$读到的数据就不为脏数据，也就是有效的数据，脏数据会导致以后的操作都会发生错误，一定要避免，不能凭借侥幸，事物$A$不能百分之百保证不回滚，所以这种隔离级别很少用于实际应用，并且它的性能也不比其他借笔好）。 原因：事物B读取了事物$A$已经修改但尚未提交的数据。若事物$A$回滚数据，事物$A$的数据存在不一致性的问题。 例子： 事物$A$ 事物$B$ 写入 $X=X+100(x=200)$ 读取 $X=200$(无效数据，脏读) 事务回滚 $X=100$ 事务结束 $X=100$ 事务结束 不可重复读(Non-Repeatable Reads)： 场景：不可重复读是指在一个事务范围中$2$次或者多次查询同一数据$M$返回了不同的数据，例如：事务$B$读取某一数据，事务$A$修改了该数据$M$并且提交，事务$B$又读取该数据$M$(可能是再次校验)，在同一个事务$B$中，读取同一个数据$M$的结果集不同。 原因：事物$B$第一次读取最初数据，第二次读取事物A已经提交的修改或删除数据。导致两次读取数据不一致。不符合事物的隔离性。 例子： 事物$A$ 事物$B$ 读取 $X=100$ 读取 $X=100$ 写入 $X=X+100$ 读取 $X=100$ 事务结束，$X=200$ 读取 $X=200$(在一个事务B中读X的值发生了变化) 事物结束 幻读(Phantom Reads)： 当用户读取某一个范围的数据行时，另一个事物又在该范围内查询了新行，当用户再读取该范围的数据行时，会发现会有新的“幻影行”，例如：事物$B$读到某一个数据$M$，事物$A$对数据$M$增加了一行并提交，事物$B$又读数据$M$，发生多出了一行造成的结果不一致(如果行数相同，则是不可重复读)。 原因：事物$B$根据相同的条件第二次查询到事物$A$提交的新增数据，两次数据结果集不一致。不符合事物的隔离性。 例子：在事物$B$里，同一个数据集$M$，读到的条数不一致(新增，删除)。 事务$A$ 事务$B$ 读取数据集$M$(3行) 在数据集$M$插入一行(4行) 事务结束 读取数据$M$(4行) 事务结束 事务的隔离级别数据库的事物隔离越严格，并发副作用越小，但付出的代价也就越大。因为事务隔离实质上是将事务在一定程度上“串行”进行，这显然与“并发”是矛盾的。实际业务中处理的话，根据自己的业务逻辑，权衡能接受的最大副作用，从而平衡了“隔离” 和“并发” 的问题。Mysql默认隔离级别是可重复读的。事务的隔离级别通常有四种（RU, RC, RR，Serializable）： 隔离级别 读数据一致性 脏读可能性 不可重复读可能性 幻读可能性 加锁读 未提交读(Read uncommitted) 最低级别 Y Y Y N 已提交读(Read committed) 语句级别 N Y Y N 可重复读(Repeatable read) 事务级别 N N Y N 可序列化(Serializable) 最高级别，事务级别 N N N Y MySql常用命令查询隔离级别select @@tx_isolation; 设置手动提交set autocommit=0 ; 查看当前事务自动提交模式select @@autocommit; 设置隔离级别set tx_isolation = ‘READ-COMMITTED’; 查询表的状态show table status like ‘test1’; 修改表的存储引擎alter table test1 engine = INNODB 查看是否开启日志show variables like ‘log_bin’; 查看日志状态show master status; 相关技术参考：深入浅出事务（1）深入浅出事务（2）深入浅出事务（3）MySQL表锁和行锁机制Mysql之锁与事务数据库 - 事务管理（ACID）、隔离级别、事务传播行为]]></content>
+      <categories>
+        <category>并发控制相关知识点</category>
+      </categories>
+      <tags>
+        <tag>事务</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[乐观锁和悲观锁(OCC和PCC)]]></title>
+    <url>%2F2016%2F10%2F01%2FSortAlogrithms%2Foptimistic-pessimistic-locking%2F</url>
+    <content type="text"><![CDATA[&emsp;&emsp;本文在介乐观锁和悲观锁之前请先了解事务相关知识点乐观并发控制(乐观锁)和悲观并发控制（悲观锁）是并发控制主要采用的技术手段。&emsp;&emsp;无论是悲观锁还是乐观锁，都是人们定义出来的概念，可以认为是一种思想。其实不仅仅是关系型数据库系统中有乐观锁和悲观锁的概念，像memcache、hibernate、tair等都有类似的概念。&emsp;&emsp;针对于不同的业务场景，应该选用不同的并发控制方式。所以，不要把乐观并发控制和悲观并发控制狭义的理解为DBMS中的概念，更不要把他们和数据中提供的锁机制（行锁、表锁、排他锁、共享锁）混为一谈。其实，在DBMS中，悲观锁正是利用数据库本身提供的锁机制来实现的。 乐观锁和悲观锁乐观锁（Optimistic Concurrency Control，OCC）：乐观锁的定义： 1.在关系数据库管理系统里，乐观锁指的是一种并发控制的方法，又名“乐观锁”(Optimistic Concurrency Control)，缩写“OCC”，它假设多用户并发的事务在处理时不会彼此互相影响，各事务能够在不产生锁的情况下处理各自影响的那部分数据。在提交数据更新之前，每个事务会先检查在该事务读取数据后，有没有其他事务又修改了该数据。如果其他事务有更新的话，正在提交的事务会进行回滚。 2.乐观锁(Optimistic Locking)相对悲观锁而言，乐观锁假设认为数据一般情况下不会造成冲突，所以在数据进行提交更新的时候，才会正式对数据的冲突与否进行检测，如果发现冲突了，则让返回用户错误的信息，让用户决定如何去做。 3.相对于悲观锁，在对数据库进行处理的时候，乐观锁并不会使用数据库提供的锁机制。一般的实现乐观锁的方式就是记录数据版本。 乐观锁的流程： 1.数据版本,为数据增加的一个版本标识。当读取数据时，将版本标识的值一同读出，数据每更新一次，同时对版本标识进行更新。当我们提交更新的时候，判断数据库表对应记录的当前版本信息与第一次取出来的版本标识进行比对，如果数据库表当前版本号与第一次取出来的版本标识值相等，则予以更新，否则认为是过期数据。 2.对于并发间操作产生的线程安全问题持乐观状态，乐观锁认为竞争不总是会发生，因此它不需要持有锁，将比较和替换这两个动作作为一个原子操作尝试去修改内存中的变量，若失败则表示发生冲突，那么就应该有相应的重试逻辑。 悲观锁Demo演示： 1.实现数据版本有两种方式，第一种是使用版本号，第二种是使用时间戳。使用版本号实现乐观锁：使用版本号时，可以在数据初始化时指定一个版本号，每次对数据的更新操作都对版本号执行$+1$操作。并判断当前版本号是不是该数据的最新的版本号。 12345678#Demo 1.01.查询出商品信息select (status,status,version) from t_goods where id=#&#123;id&#125;2.根据商品信息生成订单3.修改商品status为2update t_goods set status=2,version=version+1where id=#&#123;id&#125; and version=#&#123;version&#125;; 2.对于并发间操作产生的线程安全问题持悲状态，悲观锁认为竞争总是会发生，因此每次对某资源进行操作时，都会持有一个独占的锁，就像synchronized，直接上了锁就操作资源 悲观锁的优点和不足：&emsp;&emsp;乐观并发控制相信事务之间的数据竞争(data race)的概率是比较小的，因此尽可能直接做下去，直到提交的时候才去锁定，所以不会产生任何锁和死锁。但如果直接简单这么做，还是有可能会遇到不可预期的结果，例如两个事务都读取了数据库的某一行，经过修改以后写回数据库，这时就遇到了问题。 悲观锁（Pessimistic Concurrency Control，PCC）：悲观锁的定义： 1.悲观锁指的是对数据被外界（包括本系统当前的其他事务，以及来自外部系统的事务处理）修改持保守态度(悲观)，因此，在整个数据处理过程中，将数据处于锁定状态。 悲观锁的实现，往往依靠数据库提供的锁机制 （也只有数据库层提供的锁机制才能真正保证数据访问的排他性，否则，即使在本系统中实现了加锁机制，也无法保证外部系统不会修改数据）； 2.关系型数据库里，悲观并发控制是一种并发控制的方法。它可以阻止一个事物以影响其他用户的方式来修改数据。如果一个事物执行的操作都某行数据应用了锁，那只有当这个事物把锁释放，其他事物才能执行与该锁冲突的操作。 悲观锁的流程： 1.悲观锁的流程：在对任意记录进行修改前，先尝试为该记录加上排他锁(exclusive locking)，如果成功加锁，那么就可以对记录做修改，事务完成后就会解锁，期间若有其他对该记录做修改或加排他锁的操作，都会等待我们解锁或直接抛出异常。 悲观锁Demo演示： 1.Mysql InnoDB使用悲观锁：要使用悲观锁，我们必须关闭mysql数据库的自动提交属性，因为MySQL默认使用autocommit模式，也就是说，当你执行一个更新操作后，MySQL会立刻将结果进行提交。set autocommit=0;1234567891011#Demo 1.0//0.开始事务begin;/begin work;/start transaction; (三者选一就可以)//1.查询出商品信息select status from t_goods where id=1 for update;//2.根据商品信息生成订单insert into t_orders (id,goods_id) values (null,1);//3.修改商品status为2update t_goods set status=2;//4.提交事务commit;/commit work; &emsp;&emsp;上面的查询语句中，我们使用了select…for update的方式，这样就通过开启排他锁的方式实现了悲观锁。此时在t_goods表中，id为1的 那条数据就被我们锁定了，其它的事务必须等本次事务提交之后才能执行。这样我们可以保证当前的数据不会被其它事务修改。 使用select…for update会把数据给锁住，不过我们需要注意一些锁的级别，MySQL InnoDB默认行级锁。行级锁都是基于索引的，如果一条SQL语句用不到索引是不会使用行级锁的，会使用表级锁把整张表锁住，这点需要注意 。 简单理解下悲观锁：当一个事务锁定了一些数据之后，只有当当前锁提交了事务，释放了锁，其他事务才能获得锁并执行操作。悲观并发控制主要用于数据争用激烈的环境，以及发生并发冲突时使用锁保护数据的成本要低于回滚事物的成本环境中。 2.下面另外一个简单Demo使用方式如下： 首先要关闭MySQL的自动提交：set autocommit = 0; 12345#Demo 2.0begin --开启事务select id, total, front, end from price where id=1 for update insert into price values(?,?,?,?,?)commit --提交事务 &emsp;&emsp;这里使用select for update的方式利用数据库开启了悲观锁，锁定了id=1的这条数据(注意:这里除非是使用了索引会启用行级锁，不然是会使用表锁，将整张表都锁住。 )。之后使用commit提交事务并释放锁，这样下一个线程过来拿到的就是正确的数据。悲观锁一般是用于并发不是很高，并且不允许脏读等情况。但是对数据库资源消耗较大。 悲观锁的优点和不足：&emsp;&emsp;悲观并发控制实际上是“先取锁再访问”的保守策略，为数据处理的安全提供了保证。但是在效率方面，处理加锁的机制会让数据库产生额外的开销，还有增加产生死锁的机会；另外，在只读型事务处理中由于不会产生冲突，也没必要使用锁，这样做只能增加系统负载；还有会降低了并行性，一个事务如果锁定了某行数据，其他事务就必须等待该事务处理完才可以处理那行数. 相关技术参考： 乐观锁与悲观锁的实际应用(推荐此文) MySQL乐观锁在分布式场景下的实践(推荐此文) 乐观锁与悲观锁 深入理解乐观锁与悲观锁 深入理解乐观锁与悲观锁 mysql的锁–行锁，表锁，乐观锁，悲观锁 数据库的锁机制 本文代码Demo：Github地址：参见Price相关代码]]></content>
+      <categories>
+        <category>并发控制相关知识点</category>
+      </categories>
+      <tags>
+        <tag>并发控制</tag>
+        <tag>锁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java面试题目集锦 (1)]]></title>
+    <url>%2F2016%2F06%2F01%2FInterviewCase%2FJava%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E9%9B%86%E9%94%A6%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Java面试题目汇总</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Chapter(1-2)]]></title>
+    <url>%2F2016%2F05%2F01%2FJavaMultiThreadBook%2FMultiThreadChapter2%2F</url>
+    <content type="text"><![CDATA[多线程同步&emsp;&emsp;本文是对Chapter(1-1)中结尾中线程同步的方法继续做介绍。&emsp;&emsp;先来回顾下Chapter(1-1)文章结尾代码片段：1234567891011121314151617package com.multithread.demo.chapter1.ThreadShareDemo;/** * @author zhangsunny * @desc 线程共享操作 (线程同步) */public class MyThread2_1 extends Thread &#123; private int count = 10; @Override synchronized public void run() &#123; super.run(); count--; System.out.println("线程" + this.currentThread().getName() + "计算，count = " + count); &#125;&#125; &emsp;&emsp;以上代码通过在方法前加入synchronized关键字，使多个线程在执行run()时，以排队的方式进行处理。当一个线程调用run()前，先判断run()方法有没有被上锁，如果上锁，说明有其他线程正在调用run()方法，必须等其他线程对run()方法调用结束后才可以执行run()方法。这样就实现了排队调用run()方法，达到了按顺序对count变量减$1$的效果。synchronized可以在任意对象及方法上加锁，这段加锁的代码被称为“互斥区”或“临界区”。&emsp;&emsp;一个线程要执行同步方法里的代码时，线程首先去获取这把锁，也就会有两种结果： 1. ``获取锁成功``：那么这个线程可以执行sychronize里的代码。 2. ``获取锁失败``：那么着个线程就会不断地尝试获取这把锁，直到能够拿到为止，而且是有多个线程同时去争抢这把锁。 非线程安全&emsp;&emsp;非线程安全主要是指多个线程 对同一个对象中的同一个实例变量进行操作时会出现值被更改，值不同步的情况，影响程序的执行流程。 非线程安全环境代码Demo例子详见Github代码 ALogin类 123456789101112131415package com.multithread.demo.chapter1.ThreadIsNotSafe;/** * @author zhangsunny * @desc 非线程安全ALogin */public class ALogin extends Thread &#123; @Override public void run() &#123; LoginServlet.doPost("a","aa"); &#125;&#125; BLogin类 12345678910111213141516package com.multithread.demo.chapter1.ThreadIsNotSafe;/** * @author zhangsunny * @desc 非线程安全BLogin */public class BLogin extends Thread &#123; @Override public void run() &#123; LoginServlet.doPost("b","bb"); &#125;&#125; LoginServlet类 12345678910111213141516171819202122232425262728package com.multithread.demo.chapter1.ThreadIsNotSafe;import java.text.MessageFormat;/** * @author zhangsunny * @desc 非线程安全LoginServlet */public class LoginServlet &#123; private static String username; private static String password; public static void doPost(String usernameParam, String passwordParam) &#123; try &#123; username = usernameParam; if (usernameParam.equals("a")) &#123; Thread.sleep(5000); &#125; password = passwordParam; System.out.println(MessageFormat.format("username = &#123;0&#125; , password = &#123;1&#125;",username,password)); &#125; catch (InterruptedException e) &#123; e.printStackTrace(); &#125; &#125;&#125; RunTest 12345678910111213141516package com.multithread.demo.chapter1.ThreadIsNotSafe;/** * @author zhangsunny * @desc 非线程安全Demo测试 */public class RunTest &#123; public static void main(String[] args) &#123; ALogin aLogin = new ALogin(); aLogin.start(); BLogin bLogin = new BLogin(); bLogin.start(); &#125;&#125; 运行结果 以上结果出现非线程安全问题 解决方法：使用synchronized关键字。 123456789101112131415161718192021222324252627282930package com.multithread.demo.chapter1.ThreadIsNotSafe;import java.text.MessageFormat;/** * @author zhangsunny * @desc 非线程安全LoginServlet */public class LoginServlet &#123; private static String username; private static String password; synchronized public static void doPost(String usernameParam, String passwordParam) &#123; try &#123; username = usernameParam; if (usernameParam.equals("a")) &#123; Thread.sleep(5000); &#125; password = passwordParam; System.out.println(MessageFormat.format("username = &#123;0&#125; , password = &#123;1&#125;", username, password)); &#125; catch (InterruptedException e) &#123; e.printStackTrace(); &#125; &#125;&#125; 运行结果 线程方法总结(部分) currentThread()方法可返回代码段正在被那个线程调用的信息。 isAlive()方法是判断当前线程是否处于活动状态(就是线程已经启动且尚未种植，线程处于正在运行或准备开始运行的状态)。 sleep()方法作用是在指定毫秒数内让当前“正在执行的线程”休眠。这个“正在执行的线程”是指this.currentThread()返回的线程。 getId()方法作用是取得线程的唯一标识。]]></content>
+      <categories>
+        <category>Java Multi-thread Programming书籍</category>
+      </categories>
+      <tags>
+        <tag>多线程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Nginx基本简介]]></title>
+    <url>%2F2016%2F05%2F01%2FNginx-Config%2FNginx-Config%2F</url>
+    <content type="text"><![CDATA[前言&emps;&emps;Nginx作为web服务器软件，具有高性能、高并发和低内存占用特点。此外其也提供反向代理功能。 Nginx特点 支持高并发连接 内存消耗少 配置文件简单 成本低廉 支持Rewrite重写规则 内置健康检查功能 节省宽带 稳定性高 Nginx架构 master进程主要用来管理worker进程，包含：接收来自外界的信号，向各worker进程发送信号，监控worker进程的运行状态，当worker进程退出后(异常情况下)，会自动重新启动新的worker进程。 worker进程则是处理基本的网络事件。多个worker进程之间是对等的，他们同等竞争来自客户端的请求，各进程互相之间是独立的。一个请求，只可能在一个worker进程中处理，一个worker进程，不可能处理其它进程的请求。 开发模型：epoll和kqueue。 支持的事件机制：kqueue、epoll、rt signals、/dev/poll 、event ports、select以及poll。 支持的kqueue特性包括EV_CLEAR、EV_DISABLE、NOTE_LOWAT、EV_EOF，可用数据的数量，错误代码。 支持sendfile、sendfile64和sendfilev;文件AIO；DIRECTIO;支持Accept-filters和TCP_DEFER_ACCEP。 Nginx请求分发Nginx启动后，会有一个master进程和多个worker进程。master进程主要用来管理worker进程，包含：接收来自外界信号，像各worker进程发送信号，监控worker进程的运行状态，当worker进程退出后（异常情况下），会自动重新启动新的worker进程。而基本的网络事件，则是放在worker进程中来处理了。多个worker进程之间是对等的，他们同等竞争来自客户端的请求，各进程互相之间是独立的。一个请求，只可能在一个worker进程中处理，一个worker进程，不可能处理其它进程的请求。worker进程的个数是可以设置的，一般我们会设置与机器CPU核数一致，这里面的原因与Nginx的进程模型以及事件处理模型是分不开的。Nginx进程模型Nginx性能Nginx的高并发，官方测试支持5万并发连接。实际生产环境能到2-3万并发连接数。10000个非活跃的HTTP keep-alive 连接仅占用约2.5MB内存。三万并发连接下，10个Nginx进程，消耗内存150M。淘宝tengine团队说测试结果是“24G内存机器上，处理并发请求可达200万”。 负载均衡 负载均衡在服务端开发中算是一个比较重要的特性。Nginx除了作为常规的Web服务器外，还会被大规模的用于反向代理前端，因为Nginx的异步框架可以处理很大的并发请求，把这些并发请求hold住之后就可以分发给后台服务端(backend servers，也叫做服务池， 后面简称backend)来做复杂的计算、处理和响应，这种模式的好处是相当多的：隐藏业务主机更安全，节约了公网IP地址，并且在业务量增加的时候可以方便地扩容后台服务器。 Nginx有一个特性，就是在反向代理的时候，其默认会将前端所有请求都读取完毕后，再向后端upstream发送请求，这等于Nginx将前端的高并发、复杂的外网传输环境给hold住了，这也是Nginx被作为最流行的接入层的原因所在。 什么是负载均衡&emps;&emps;应用部署在不同的服务器上，但是通过统一的域名进入，Nginx则对请求进行分发，将请求分发到不同的服务器上去处理，这样就可以有效的减轻了单台服务器的压力。&emps;&emps;在上面这两种情况下，Nginx服务器的作用都只是作为分发服务器，真正的内容，我们可以放在其他的服务器上，这样来，还能起到一层安全隔壁的作用，Nginx作为隔离层 推荐博文 Nginx负载均衡 如何用Nginx搭建一个安全的、快速的微服务架构]]></content>
+      <categories>
+        <category>负载均衡</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Chapter(1-1)]]></title>
+    <url>%2F2016%2F05%2F01%2FJavaMultiThreadBook%2FMultiThreadChapter1%2F</url>
+    <content type="text"><![CDATA[Thread类中start()方法和run()方法的区别 Thread.java类中的start()方法通知“线程规划器”，此线程已经准备就绪，等待调用线程对象的run()方法。这个过程其实就是让系统安排一个时间来调用Thread中的run()方法，也就是使线程得到运行，启动线程，具有异步执行的效果。 如果代码调用thread.run()方法就不是异步执行，而是同步，那么此线程对象并不交给“线程规划器”来进行处理，而是由main()主线程来调用run()方法，也就是必须等run()方法中的代码执行完后才可以执行后面的代码。 (代码Demo地址)：参见com.multithread.demo.chapter1.ThreaStartAndRun目录下代码。 运行结果： start()方法 ： run()方法 ： 实例变量与线程安全 自定义线程类中的实例变量针对其他线程可以有共享和不共享之分，这在多个线程之间进行交互时是很重要的一个技术点。 (代码Demo地址)：参见com.multithread.demo.chapter1.ThreadShareDemo目录下代码 不共享数据 代码示例： 1234567891011121314151617 package com.multithread.demo.chapter1.ThreadShareDemo;/** * @author zhangsunny * @desc 测试线程不共享Demo */public class TestThread &#123; public static void main(String[] args) &#123; MyThread myThreadA = new MyThread("A"); MyThread myThreadB = new MyThread("B"); MyThread myThreadC = new MyThread("C"); myThreadA.start(); myThreadB.start(); myThreadC.start(); &#125;&#125; 运行结果： 代码解析：以上步骤创建了三个线程，每个线程都有各自的count变量，自己减少自己的count变量的值。并不存在多个线程访问同一个实例变量的情况。 共享数据 代码示例 12345678910111213141516171819202122package com.multithread.demo.chapter1.ThreadShareDemo;/** * @author zhangsunny * @desc 测试线程共享Demo（线程不安全） */public class TestThread2 &#123; public static void main(String[] args) &#123; MyThread2 myThread2 = new MyThread2(); Thread a = new Thread(myThread2, "A"); Thread b = new Thread(myThread2, "B"); Thread c = new Thread(myThread2, "C"); Thread d = new Thread(myThread2, "D"); Thread e = new Thread(myThread2, "E"); a.start(); b.start(); c.start(); d.start(); e.start(); &#125;&#125; 运行结果： 代码解析：以上步骤共享数据的情况就是多个线程可以访问同一个变量，实现了$5$个线程共同对一个count变量进行减法操作的目的。A和B的count值都为 $8$，说明A和B同时对count进行处理，产生“非线程安全”问题，JVM中 $i- -$ 操作分为三步： 取得原有 $i$ 值； 计算 $i-1$； 对 $i$ 进行赋值操作； 如何避免：对多个线程之间进行同步，也就是用按顺序排队的方式进行减 $1$ 操作。以下为同步方式实现。具体同步介绍参见Chapter(1-2) 123456789101112131415161718package com.multithread.demo.chapter1.ThreadShareDemo;/** * @author zhangsunny * @desc 线程共享操作 (线程同步) */public class MyThread2_1 extends Thread &#123; private int count = 10; @Override synchronized public void run() &#123; super.run(); count--; System.out.println("线程" + this.currentThread().getName() + "计算，count = " + count); &#125;&#125; 运行结果：]]></content>
+      <categories>
+        <category>Java Multi-thread Programming书籍</category>
+      </categories>
+      <tags>
+        <tag>多线程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JVM内存结构(4)]]></title>
+    <url>%2F2016%2F04%2F27%2FJVM%2Fjvm4%2F</url>
+    <content type="text"><![CDATA[JVM内存结构&emsp;&emsp;JVM内存结构主要有三大块：堆内存 、方法法区 和 栈。&emsp;&emsp;堆内存 是JVM中最大的一块由 年轻代和 老年代 组成，而年轻代内存又被分为三部分， Eden空间 、From Survivo空间 、To Survivor空间 ，默认情况下年轻代按照$8:1:1$的比例来分配；方法区存储类信息、常量、静态变量等数据，是线程共享的区域 ，为与Java堆区分，方法区还有一个别名NonHeap(非堆)；栈又分为 Java虚拟机栈 和 本地方法栈 主要用于方法的执行。&emsp;&emsp;JAVA的JVM的内存可分为3个区： 堆(Heap)、 栈(Stack) 、 方法区(Method Area) 。实际IDEA开发Tomcat启动项配置示例： -Xms1024m -Xmx1024m -XX:PermSize=512M -XX:MaxPermSize=1024m -Dfile.encoding=utf-8 Java堆(Java Heap)参数设置Java堆可通过参数 -Xms 和 -Xmx设置； 存储内容Java堆是存放对象的实例，几乎所有的对象实例和数组都存储于此区域，是被所有线程共享，是JVM虚拟机管理的内存中最大的一块，在虚拟机启动时创建； 内存分配为了便于更好的回收和分配内存，堆可细分为：新生代和老年代，新生代 在细致一些就是Eden空间、From Survivor空间、To Survivor区。 新生代：包括Eden区、From Survivor区、To Survivor区，系统默认大小 $Eden:Survivor= 8:1$ 老年代：在年轻代中经历了N次垃圾回收后仍然存活的对象，就会被放到老年代中。因此可认为老年代中存放的都是一些生命周期较长的对象 Survivor空间等Java堆可以处理在物理内存不连续的空间，只要逻辑上是连续即可。 Java虚拟机栈(Stack)参数设置可通过参数 栈帧是方法运行期的基础数据结构栈容量可由-Xss设置； 存储内容Java虚拟机栈是线程私有的，它的生命周期与线程相同 每个方法被调用直至执行完成的过程，就对应一个栈帧在虚拟机栈中从入栈到出栈的过程 虚拟机栈是执行Java方法的内存模型(也就是字节码)服务：**每个方法在执行的同时都会创建一个栈帧，用于存储局部变量表、操作数栈、动态链接、方法出口等信息。 局部变量表：32位变量槽，存放了编译期可知的 各种基本数据类型、对象引用、returnAddress类型 操作数栈：基于栈的执行引擎，虚拟机把操作数栈作为它的工作区，大多数指令都要从这里弹出数据、执行运算，然后把结果压回操作数栈。 动态链接：每个栈帧都包含一个指向运行时常量池(方法区的一部分)中该栈帧所属方法的引用。持有这个引用是为了支持方法调用过程中的动态连接。Class文件的常量池中有大量的符号引用，字节码中的方法调用指令就以常量池中指向方法的符号引用为参数。这些符号引用一部分会在类加载阶段或第一次使用的时候转化为直接引用，这种转化称为静态解析。另一部分将在每次的运行期间转化为直接应用，这部分称为动态链接 方法出口：返回方法被调用的位置，恢复上层方法的局部变量和操作数栈，如果无返回值，则把它压入调用者的操作数栈。 局部变量表所需的内存空间在编译期间完成分配，当进入一个方法时，这个方法需要在帧中分配多大的局部变量空间是完全确定的。 在方法运行期间不会改变局部变量表的大小。主要存放了编译之后可知的各种基本数据类型、对象引用。（reference类型、returnAddress类型） 本地方法栈(Local Method Stack)参数设置可通过参数 栈容量可由-Xss设置。 存储内容 虚拟机栈为虚拟机执行Java方法（也就是字节码）服务。 本地方法栈则是为虚拟机使用到的Native方法服务。有的虚拟机（譬如Sun HotSpot虚拟机）直接就把本地方法栈和虚拟机栈合二为一。 方法区(Method Area)参数设置可通过参数-XX:MaxPermSize设置 存储内容 线程共享内存区域，用于储存已被虚拟机加载的类信息、常量、静态变量，即编译器编译后的代码，方法区也称持久代（Permanent Generation）。 虽然Java虚拟机规范把方法区描述为堆的一个逻辑部分，但是它却有一个别名叫做Non-Heap（非堆），目的应该是与Java堆区分开来。 如何实现方法区，属于虚拟机的实现细节，不受虚拟机规范的约束。 方法区主要存放java类定义信息，与垃圾回收关系不大，方法区可以选择不实现垃圾回收，但不是没有垃圾回收。 方法区域的内存回收目标主要针对常量池的回收和对类型的卸载。 运行时常量池，也是方法区的一部分，虚拟机加载Class后把常量池中的数据放入运行时常量池。 运行时常量池(Runtime Constant Pool)参数设置可通过参数-XX:PermSize和-XX:MaxPermSize设置 存储内容 常量池(Constant Pool)：常量池数据编辑之后被确定，是Class文件中的一部分。存储了类、方法、接口等中的常量，也包括字符串常量。 字符串池/字符串常量池(String Pool/ String Constant Pool)：是常量池中的一部分，存储编译期类中产生的字符串类型数据。 运行时常量池(Runtime Constant Pool)：方法区的一部分，所有线程共享。虚拟机加载Class后把常量池中的数据放入到运行时常量池。常量池：可以理解为Class文件中的资源仓库，它是Class文件结构中与其他项目资源关联最多的数据类型。 1. 常量池中主要存放两大类常量：字面量(Literal)和符号引用(Symbolic Reference)。 2. 字面量：文本字符串、声明为final的常量值等。 3. 符号引用：类和接口的完全限定名(Fully Qualified Name)、字段的名称和描述符(Descriptor)、方法的名称和描述符号 直接内存(Direct Memory)参数设置可通过-XX:MaxDirectMemorySize指定，如果不指定，则默认与Java堆的最大值（-Xmx指定）一样。 存储内容直接内存（Direct Memory）并不是虚拟机运行时数据区的一部分，也不是Java虚拟机规范中定义的内存区域，但是这部分内存也被频繁地使用，而且也可能导致OutOfMemoryError异常出现。 参考资料 50个多线程面试题]]></content>
+      <categories>
+        <category>JVM</category>
+      </categories>
+      <tags>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JVM内存结构(3)]]></title>
+    <url>%2F2016%2F04%2F26%2FJVM%2Fjvm3%2F</url>
+    <content type="text"><![CDATA[JVM具体参数和内存区域映射图例 &emsp;&emsp;此文主要用图例方式描绘了JVM的结构，介绍了JVM内存结构对应的参数名。 在具体实现上，JVM将需要进行垃圾回收的区域分为3类：新生代（Young Generation）、老年代(Old Generation)、永久代(Permanent Generation)。其中新生代又分为eden和survival（S0、S1），具体结构如下图所示： 简单讲，新生代的eden、新生代的survival、老生代里的对象存活时间依次变长。 参数名称 含义 -Xmx 初始堆大小 -Xms 最大堆大小 -Xss 每个线程的堆栈大小 -XX:NewSize 设置年轻代大小(for 1.3/1.4) -XX:MaxNewSize 年轻代最大值(for 1.3/1.4) -XX:PermSize 设置持久代(perm gen)初始值 -XX:MaxPermSize 设置持久代最大值 -XX:NewRatio 年轻代(包括Eden和两个Survivor区)与年老代的比值(除去持久代) -XX:SurvivorRatio Eden区与Survivor区的大小比值 JVM内存结构图例 &emsp;&emsp;方法区和堆是所有线程共享的内存区域；而java栈、本地方法栈和程序计数器是运行是线程私有的内存区域。 Java堆（Heap）,是Java虚拟机所管理的内存中最大的一块。Java堆是被所有线程共享的一块内存区域，在虚拟机启动时创建。此内存区域的唯一目的就是存放对象实例，几乎所有的对象实例都在这里分配内存。 方法区（Method Area）,方法区（Method Area）与Java堆一样，是各个线程共享的内存区域，它用于存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。 程序计数器（Program Counter Register）,程序计数器（Program Counter Register）是一块较小的内存空间，它的作用可以看做是当前线程所执行的字节码的行号指示器。 JVM栈（JVM Stacks）,与程序计数器一样，Java虚拟机栈（Java Virtual Machine Stacks）也是线程私有的，它的生命周期与线程相同。虚拟机栈描述的是Java方法执行的内存模型：每个方法被执行的时候都会同时创建一个栈帧（Stack Frame）用于存储局部变量表、操作栈、动态链接、方法出口等信息。每一个方法被调用直至执行完成的过程，就对应着一个栈帧在虚拟机栈中从入栈到出栈的过程。 本地方法栈（Native Method Stacks）,本地方法栈（Native Method Stacks）与虚拟机栈所发挥的作用是非常相似的，其区别不过是虚拟机栈为虚拟机执行Java方法（也就是字节码）服务，而本地方法栈则是为虚拟机使用到的Native方法服务。 ClassLoader是负责加载class文件，class文件在文件开头有特定的文件标示，并且ClassLoader只负责class文件的加载，至于它是否可以运行，则由Execution Engine决定。 Native Interface是负责调用本地接口的。他的作用是调用不同语言的接口给JAVA用，他会在Native Method Stack中记录对应的本地方法，然后调用该方法时就通过Execution Engine加载对应的本地lib。原本多于用一些专业领域，如JAVA驱动，地图制作引擎等，现在关于这种本地方法接口的调用已经被类似于Socket通信，WebService等方式取代。 Execution Engine是执行引擎，也叫Interpreter。Class文件被加载后，会把指令和数据信息放入内存中，Execution Engine则负责把这些命令解释给操作系统。 Runtime Data Area则是存放数据的，分为五部分：Stack，Heap，Method Area，PC Register，Native Method Stack。几乎所有的关于java内存方面的问题，都是集中在这块。下图是javapapers.com上关于Run-time Data Areas的描述： 相关技术参考 JVM原理分析 JVM知识点总览 JVM系列之GC 重读 JVM JVM 的内存模型]]></content>
+      <categories>
+        <category>JVM</category>
+      </categories>
+      <tags>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JVM内存结构(2)]]></title>
+    <url>%2F2016%2F04%2F24%2FJVM%2Fjvm2%2F</url>
+    <content type="text"><![CDATA[JVM内存结构（运行时数据区）该文承接JVM内存结构简介(1)博文主要介绍所有线程共享的区域(方法区 和堆))，本文简单介绍剩余JVM的是三个区域：Java栈(Java Stack)、本地方法栈(Native Method Stack)、程序计数器(Program Counter Register)。 三、Java虚拟机栈(Java Virtual Machine Stacks) 作用：描述的就是Java方法执行的内存模型。每个方法被执行的时候都会同时创建一个栈帧(Stack Frame)用于存储局部变量表、操作栈、动态链接、方法出口等信息。每个方法被调用直至执行完成的过程，就对应着一个栈帧在虚拟机栈中从入栈道出栈的过程。一个方法的执行过程就等同于栈帧进栈出栈的过程。 特点：线程私有的，生命周期和线程相同。栈是一个后进先出(LIFO)的数据结构，每次方法调用时，一个新的栈帧创建并被压栈到栈顶， 当方法正常返回或者抛出未捕获的异常时，栈帧就会出栈。除了栈帧的压栈和出栈，栈不能被直接操作。 在JVM中，若线程请求栈的深度 超过了虚拟机允许的最大深度 ，则会抛出StackOverflowError异常；当栈进行动态扩展，但 无法申请到相应内存空间（此时，线程请求的栈深度未超过虚拟机允许的最大深度）时，则会抛出OutOfMemoryError异常。 局部变量表：存放了编译期间可以知道大小的各种类型变量，它所需要的内存空间大小在编译期间就已经分配，当一个方法被调用时，栈帧进入虚拟机栈，在运行期间，局部变量表大小是不会变化的。 栈帧(Frame)：栈帧只存储指向堆中对象或数组的引用 ，包含局部变量数组、返回值、操作数栈、类当前方法运行时常量池引用： 局部变量数组：包含了方法执行过程中所有变量，包括this引用、所有方法参数、其他局部变量。对于类方法（也就是静态方法），方法参数从下标 0 开始，对于对象方法，位置0保留为 this。（boolean、byte、char、long、short、int、float、double、reference、returnAddress均为局部变量，除了 long 和 double 类型以外，所有的变量类型都占用局部变量数组的一个位置。long 和 double 需要占用局部变量数组两个连续的位置，因为它们是 64 位双精度，其它类型都是 32 位单精度。）操作数栈：在执行字节码指令过程中被用到，这种方式类似于原生CPU寄存器。大部分JVM字节码把时间花费在操作数栈的操作上：入栈 、出栈 、复制 、交换 、产生消费变量 的操作。因此，局部变量数组和操作数栈之间的交换变量指令操作通过字节码频繁执行。比如，一个简单的变量初始化语句将产生两条跟操作数栈交互的字节码。关于局部变量数组、操作数栈和运行时常量池之间交互的详细信息，可以在类文件结构部分找到。 四、本地方法栈(Native Method Stack) 作用：Java虚拟机在实现时，可以根据自身需求，确定是否实现本地方法栈。在实现上，JVM可能会使用到传统的栈（通常称之为“C Stacks”）来支持 native 方法（指使用 Java 以外的其他语言编写的方法）的执行，这个栈就是本地方法栈。当JVM支持本地方法栈时，这个栈会在线程创建时按照线程分配。 在JVM中，本地方法栈可能发生的异常情况也分为Stack OverflowError和OutOfMemoryError异常，出错原因和虚拟机栈相似，此处不再赘述。 特点：Java 虚拟机规范允许本地方法栈被实现成固定大小的或者是根据计算动态扩展和收缩的。本地方法栈则是为虚拟机使用到的Native方法服务. 五、程序计数器(Program Counter Register) 程序计数器（Program Counter Register）是一块较小的内存空间，它的作用可以看做是当前线程所执行的字节码的行号指示器。在虚拟机的概念模型里（仅是概念模型，各种虚拟机可能会通过一些更高效的方式去实现），字节码解释器工作时就是通过改变这个计数器的值来选取下一条需要执行的字节码指令，分支、循环、跳转、异常处理、线程恢复等基础功能都需要依赖这个计数器来完成。 在任意时刻，一个Java虚拟机线程只会执行一个方法，而 PC Java 虚拟机允许多条线程同时执行。因此，每一条 Java虚拟机线程都有自己的 PC 寄存器 ，他们是相互独立的。每一条 Java虚拟机线程都有自己的PC 寄存器，他们是相互独立的。 我们称正在被线程执行的方法称为该线程的当前方法（Current Method）。如果这个方法不是 native 的，那 PC 寄存器就保存 Java 虚拟机正在执行的字节码指令的地址，如果该方法是 native 的，那 PC 寄存器的值是 undefined。 由于Java虚拟机的多线程是通过线程轮流切换并分配处理器执行时间的方式来实现的，在任何一个确定的时刻，一个处理器（对于多核处理器来说是一个内核）只会执行一条线程中的指令。因此，为了线程切换后能恢复到正确的执行位置，每条线程都需要有一个独立的程序计数器，各条线程之间的计数器互不影响，独立存储，我们称这类内存区域为“线程私有”的内存。 如果线程正在执行的是一个Java方法，这个计数器记录的是正在执行的虚拟机字节码指令的地址；如果正在执行的是Natvie方法，这个计数器值则为空（Undefined）。]]></content>
+      <categories>
+        <category>JVM</category>
+      </categories>
+      <tags>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JVM内存结构(1)]]></title>
+    <url>%2F2016%2F04%2F23%2FJVM%2Fjvm1%2F</url>
+    <content type="text"><![CDATA[JVM内存结构（运行时数据区）JVM内存结构指得是：运行时数据区（Runtime Data Area），由 方法区(Method Area) 、堆(Heap) 、Java栈(Java Stack) 、本地方法栈(Native Method Stack)、程序计数器(Program Counter Register)。 一、方法区(Method Area) 作用： 用于存储已被虚拟机加载的类信息、常量、静态变量、即时编译后的代码等数据。此区域内存回收目标主要针对常量池回收和对类型的卸载回收。 特点：线程共享 。 永久代的疑问(PerGen)：该内存区域一般被称为”永久代(Permanent Generation) “，二者并不等价，设计之初就把GC分代收集扩展至方法区，或者说使用永久代实现方法区而已。 运行时常量池：方法区的一部分，存放编译期生成的各种字面量(“zdy”,”123”等)和 符号引用 。编译器和运行期的intern()都可以将常量放入池中。受方法区限制，常量池无法申请到内存时会抛出OutOfMemoryError异常。运行时常量池具有动态性，并非只有Class文件中的内容才能进入运行时常量池，运行期间也能将新的常量放入池中。如String.intern（）方法。 方法区储存类的信息： Classloader引用； 运行时常量池：数值型常量、字段引用、方法引用、属 性； 字段数据：针对每个字段的信息、字段名、类型、修饰符、属性； 方法数据：每个方法、方法名、返回值类型、参数类型、修饰符、属性； 方法代码：每个方法、字节码、操作数栈大小、局部变量大小、局部变量表、异常表、每个异常处理器、开始点、结束点、异常处理代码的程序计数器偏移量、被捕获异常类对应的常量池下标； 字面量(literal) ：由字母，数字等构成的字符串或者数值，用于表达源代码中一个固定值的表示法(notation)。几乎所有计算机编程语言都具有对基本值的字面量表示，诸如：整数、浮点数以及字符串；而有很多也对布尔类型和字符类型的值也支持字面量表示；还有一些甚至对枚举类型的元素以及像数组、记录和对象等复合类型的值也支持字面量表示法。 符号引用 ：简单地说就是，符号引用存在class文件中的常量池，包括类和接口的全限定名、字段的名称和描述符以及方法的名称和描述符。jvm加载class的时候就可以凭着这三者进行动态连接，得到具体的内存地址。占用的数据结构在常量池项目类型有，例如类或接口的符号引用结构为u1的tag和u2的name_index。 二、堆(Heap) 作用 ：被所有线程运行时共享的内存区域，JVM启动之后，存放对象实例和数组，内部会划出多个线程私有的分配缓冲区(Thread Location Allocation Buffer ,TLAB)。该存储区域物理上可以是不连续空间，但是逻辑上一定要连续。 特点 ：是GC管理的主要区域，由于GC（垃圾收集器）是采用分代收集算法,根据对象存活率，堆还可以分为新生代、老年代、永久代。 分类 ： 新生代(Young Generation) ：方法中去new一个对象，那这方法调用完毕后，对象就会被回收，这就是一个典型的新生代对象。 每次使用Eden和其中一块Survivor，当回收时，将Eden和Survivor中还存活的对象一次性地复制到另外一块Survivor空间上，最后清理Eden和刚才用过的Survivor空间。 HotSpot虚拟机默认Eden和Survivor的大小比例是8:1 ，也就是说，每次新生代中可用内存空间为整个新生代容量的90%（80%+10%），只有10%的空间会被浪费。 98%的对象可回收只是一般场景下的数据，没办法保证每次回收都只有不多于10%的对象存活，当Survivor不够用时，需要依赖于老年代进行分配担保，所以 大对象 直接进入老年代。同时长期存活的对象进入老年代（虚拟机给每个对象定义一个年龄计数器）。年轻代内存又被分成三部分： Eden空间：对象优先分配在Eden区，若Eden区无足够的空间，虚拟机执行一次Minor GC。对象被创建时首先放到这个区域，进行垃圾回收后，不能被回收的对象被放到空的Survivor区域。 Survivor Space幸存者区：用于保存在Eden Space内存区域中经过垃圾回收后没有被回收的对象。Survivor有两类，分别为To Suvivor 和 From Suvivor两个区域，这两个区域空间大小是一样的执行： &emsp;&emsp;a.From Survivor空间： &emsp;&emsp;b.To Survivor空间 ： 执行回收的内存运行： 执行垃圾回收时Eden区域不能被回收的对象被放入到空的Suvivor(也就是To Survivor，同时Eden区域的内存会在垃圾回收的过程中全部释放)，另一个Survivor(即From Survivor)里不能被回收的对象也会被放入到Survivor(即To Survivor)，然后To Survivor和 From Survivor的标记会互换，始终保证一个Survivor是空的。 老年代(Old Generation) ： 老年代空间大小&emsp;=&emsp;堆空间大小&emsp;–&emsp;年轻代大空间大小 年轻代的垃圾回收 ：Eden Space(伊甸园) 和Suvivor Space 都属于新生代，新生代中执行垃圾回收被称为Minor GC(由于是对新生代进行垃圾回收，所以被称为Young GC)，每次Young GC 后留下来的对象age +1。 Eden:From:TO =8:1:1 由于新生代中90%的对象都是”朝生夕死”，采用复制算法是比较合理的，首先只移动了存活下来的对象(比较少数),其次内存在移动到To区域后是有顺序的，不存在内存碎片。值得一提的是，假如在一次Minor GC时,Eden中存活的对象+From中存活的对象&gt;To的剩余空间，则会通过担保机制将对象直接转移到Old Gen ,如果Old Gen的内存空间也不够，则进行一次Full GC .当 对象的年龄到达15岁时会转移到Old Gen(可通过参数配置，一般不建议更改) 使用方式 ：Java堆可以处于物理上不连续的内存空间中，只要逻辑上是连续的即可，就像我们的磁盘空间一样。在实现时，既可以实现成固定大小的，也可以是可扩展的，当前主流的虚拟机都是按照可扩展来实现的（通过-Xmx和-Xms控制）。 如果在堆中没有内存完成实例分配，并且堆也无法再扩展时，将会抛出OutOfMemoryError异常。 对象分配规则： 1.对象优先分配在Eden区：若Eden区没有足够的空间时，虚拟机执行一次Minor GC； 2.大对象(大对象是指需要大量连续内存空间的对象)直接进入老年代：这样做目的是避免在Eden区和两个Survivor区之间发生大量的内存拷贝(新生代采用 复制算法 收集内存)； 3.长期存活的对象进入老年代：虚拟机为每个对象定义一个年龄计数器，如果对象经过了1次Minor GC那么对象会进入Survivor区，之后每经过一次Minor GC那么对象年龄加 1，直到达到阀值，对象进入老年区； 4.动态判断对象的年龄：如果Survivor区中相同年龄的所有对象大小的总和大于Survivor空间的一半，年龄大于或等于该年龄的对象可以直接进入老年代； 5.空间分配担保：每次每次进行Minor GC时，JVM会计算Survivor区移至老年区的对象的平均大小，如果这个值大于老年区的剩余值大小则进行一次Full GC，如果小于检查HandlePromotionFailure设置，如果true则只进行Monitor GC，如果false则进行Full GC；]]></content>
+      <categories>
+        <category>JVM</category>
+      </categories>
+      <tags>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[多线程相关知识点]]></title>
+    <url>%2F2016%2F04%2F23%2FJavaMultiThread%2Fthread-sample-introduce%2F</url>
+    <content type="text"><![CDATA[引入线程技术背景 一个应用程序中同时存在多个任务，其中部分活动会随时间的推移而阻塞，而另外一部分则不会。例如：一个文字处理软件，前台部分需要从终端设备获得输入或者将处理完的部分输出，而后台线程则可以实现对文字的处理。故对于CPU密集型进程，该用多线程其性能不一定能得到很大提高，但对于IO密集型进程，其性能可得到很大提高。 线程比进程更轻量级，创建和撤销的代价小，在许多系统中国呢，创建一个线程比一个进程要快10～100倍不等。 在多核CPU中，真正的并行有了可能。即在多线程设计中一部分可用来处理前台任务，一部分可用来处理后台任务，实现真正意义上的并行。 线程间的切换代价要比进程切换的代价小。 引入线程技术背景 某个操作可能会陷入长时间等待，等待的线程会进入睡眠状态，无法继续进行。多线程执行可以有效利用等待时间。如等待网络响应可能需要几秒时间。 某个操作(常常是计算)会消耗大量的时间，如果只有一个线程，程序和用户之间交互会中断。多线程可以让一个线程负责交付，另一个线程负责计算。 多CPU或者多核计算机，本身具备同时执行多个线程的能力，故单线程无法完全发挥计算机的计算能力。 相对于多进程应用，多线层在数据共享方面效率要高得多。 程序逻辑本身就要求并发操作。 进程和线程&emsp;&emsp;进程是操作系统的管理单位，线程则是进程的管理单位。一个线程至少包含一个执行线程。不管是在多线程还是单线程，每个线程都一个程序计数器（记录要执行的下一条指令），一组寄存器（保存当前线程的工作变量），堆栈（记录执行理事，其中每一帧保存了一个已经调用但为返回的过程）。虽然线程寄生 在进程中，但与它的进程是不同的概念，并且可以分别处理：进程是系统分配资源的基本单位，线程是调度CPU的基本单位。 每个进程中的内容 每个线程的内容 地址空间 程序计数器 全局变量 寄存器 打开文件 堆栈 子进程 状态 即将发生的报警 信号与信号处理程序 账户信号 同步、互斥信号量 CPU调度&emsp;&emsp;进程执行由CPU进行周期和I/O等待周期组成。进程在这两个状态之间切换（CPU burst ～ IO burst）进程执行从CPU区间（CPU burst）开始，在这之后是IO区间（IO burst）。接着另外一个CPU区间，然后是另外一个IO区间，如此进行下去，最后CPU区间通过系统请求中止执行。经过大量CPU区间长度的测试。发现具有大量短CPU区间和少量长CPU区间。IO约束程序通常具有很多短CPU区间。CPU约束成层序可能有少量的长CPU区间。这种分布有助于选择合适的CPU调度算法。]]></content>
+      <categories>
+        <category>Java多线程</category>
+      </categories>
+      <tags>
+        <tag>多线程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[线程池介绍]]></title>
+    <url>%2F2016%2F04%2F21%2FJavaMultiThread%2Fthread-pool%2F</url>
+    <content type="text"><![CDATA[前言&emsp;&emsp;很多人可能已经很熟悉操作系统中的多任务：就是同一时刻运行多个程序的能力。&emsp;&emsp;多线程程序在较低层次上扩展了多任务的概念：一个程序同时执行多个任务。通常每一个任务称为一个线程，它是线程控制的简称。可以同时运行一个以上线程的程序成为多线程程序。&emsp;&emsp;线程和进程的区别： 多个进程的内部数据和状态都是完全独立的，而多线程是共享一块内存空间和一组系统资源，有可能互相影响。 线程本身的数据通常只有寄存器数据，以及一个程序执行时使用的堆栈，所以线程的切换负担比进程切换的负担要小。多线程程序比多进程程序需要更少的管理费用。 进程是重量级的任务，需要分配给它们独立的地址空间，进程间通信是昂贵和受限的，进程间的转换也是很需要花费的。而线程是轻量级的选手，它们共享相同的地址空间并且共同分享同一个进程，线程间的通信是便宜的，线程间的转换也是低成本的。 多线程技术背景&emsp;&emsp;面向对象编程，创建和销毁对象是很浪费时间，因为创建一个对象要获取内存资源或者其它更多资源。在Java中亦是如此，虚拟机将试图跟踪每一个对象，以便能够在对象销毁后进行垃圾回收。&emsp;&emsp;为了提高服务程序的效率，尽可能减少创建和销毁对象的次数，特别是一些很耗资源的对象创建和销毁。如何利用已有对象来服务就是一个需要解决的关键问题，其实这就是一些”池化资源”技术产生的原因。&emsp;&emsp;线程池为我们做的，就是线程创建之后为我们保留，当我们需要的时候直接拿来用，省去了重复创建销毁的过程。 线程池的优点 重用线程中的线程，减少因对象创建、销毁所带来的性能开销； 能有效的控制线程的最大并发数，提高系统资源利用率，同时避免过多的资源竞争，避免堵塞； 能够多线程进行简单的管理，使线程的使用简单、高效； 线程池的处理逻辑线程池ThreadPoolExecutor构造函数12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455//五个参数的构造函数 public ThreadPoolExecutor(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue&lt;Runnable&gt; workQueue) &#123; this(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, Executors.defaultThreadFactory(), defaultHandler); &#125;//六个参数的构造函数（1） public ThreadPoolExecutor(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue&lt;Runnable&gt; workQueue, ThreadFactory threadFactory) &#123; this(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, threadFactory, defaultHandler); &#125; //六个参数的构造函数（2） public ThreadPoolExecutor(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue&lt;Runnable&gt; workQueue, RejectedExecutionHandler handler) &#123; this(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, Executors.defaultThreadFactory(), handler); &#125; //七个参数的构造函数 public ThreadPoolExecutor(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue&lt;Runnable&gt; workQueue, ThreadFactory threadFactory, RejectedExecutionHandler handler) &#123; if (corePoolSize &lt; 0 || maximumPoolSize &lt;= 0 || maximumPoolSize &lt; corePoolSize || keepAliveTime &lt; 0) throw new IllegalArgumentException(); if (workQueue == null || threadFactory == null || handler == null) throw new NullPointerException(); this.corePoolSize = corePoolSize; this.maximumPoolSize = maximumPoolSize; this.workQueue = workQueue; this.keepAliveTime = unit.toNanos(keepAliveTime); this.threadFactory = threadFactory; this.handler = handler; &#125; 构造函数参数介绍 corePoolSize（核心线程， 该线程池中核心线程数最大值：在创建完线程池之后，核心线程先不创建，在接到任务之后创建核心线程。并且会意一直存在于线程池中(即使这个线程什么多不做)，有任务要执行时，如果核心线程没有被占用，会优先用核心线程执行任务。数量一般情况下设置为CPU核数的二倍即可。 maximumPoolSize （该线程池中线程总数最大值）：线程总数 $=$ 核心线程数 $+$ 非核心线程数。（非核心线程：简单理解，即核心线程都被占用，但还有任务要做，就创建非核心线程） keepAliveTime（非核心线程闲置超时时长）：这个参数可以理解为，任务少，但池中线程多，非核心线程不能白养着，超过这个时间不工作的就会被干掉，但是核心线程会保留。 TimeUnit（keepAliveTime的单位）： TimeUnit是一个枚举类型，其包括: NANOSECONDS ： 1微毫秒 = 1微秒 / 1000 MICROSECONDS ： 1微秒 = 1毫秒 / 1000 MILLISECONDS ： 1毫秒 = 1秒 /1000 SECONDS ： 秒 MINUTES ： 分 HOURS ： 小时 DAYS ： 天 BlockingQueue workQueue（线程池中的任务队列）：默认情况下，任务进来之后先分配给核心线程执行，核心线程如果都被占用，并不会立刻开启非核心线程执行任务，而是将任务插入任务队列等待执行，核心线程会从任务队列取任务来执行，任务队列可以设置最大值，一旦插入的任务足够多，达到最大值，才会创建非核心线程执行任务。常见的workQueue有四种： SynchronousQueue：这个队列接收到任务的时候，会直接提交给线程处理，而不保留它，如果所有线程都在工作怎么办？那就新建一个线程来处理这个任务！所以为了保证不出现&lt;线程数达到了maximumPoolSize而不能新建线程&gt;的错误，使用这个类型队列的时候，maximumPoolSize一般指定成Integer.MAX_VALUE，即无限大； LinkedBlockingQueue：这个队列接收到任务的时候，如果当前已经创建的核心线程数小于线程池的核心线程数上限，则新建线程(核心线程)处理任务；如果当前已经创建的核心线程数等于核心线程数上限，则进入队列等待。由于这个队列没有最大值限制，即所有超过核心线程数的任务都将被添加到队列中，这也就导致了maximumPoolSize的设定失效，因为总线程数永远不会超过corePoolSize； ArrayBlockingQueue：可以限定队列的长度，接收到任务的时候，如果没有达到corePoolSize的值，则新建线程(核心线程)执行任务，如果达到了，则入队等候，如果队列已满，则新建线程(非核心线程)执行任务，又如果总线程数到了maximumPoolSize，并且队列也满了，则发生错误，或是执行实现定义好的饱和策略 DelayQueue：队列内元素必须实现Delayed接口，这就意味着你传进去的任务必须先实现Delayed接口。这个队列接收到任务时，首先先入队，只有达到了指定的延时时间，才会执行任务； ThreadFactory threadFactory （创建线程的工厂）：可以用线程工厂给每个创建出来的线程设置名字。一般情况下无须设置该参数。 RejectedExecutionHandler handler（饱和策略）：这是当任务队列和线程池都满了时所采取的应对策略，默认是AbordPolicy ， 表示无法处理新任务，并抛出 RejectedExecutionException 异常。此外还有3种策略，它们分别如下： CallerRunsPolicy：用调用者所在的线程来处理任务。此策略提供简单的反馈控制机制，能够减缓新任务的提交速度。 DiscardPolicy：不能执行的任务，并将该任务删除。 DiscardOldestPolicy：丢弃队列最近的任务，并执行当前的任务。 接下来上图，相信结合图你能大彻大悟~ 线程池使用java为我们提供了4种线程池FixedThreadPool、CachedThreadPool、SingleThreadExecutor、ScheduledThreadPool，几乎可以满足我们大部分的需要。 FixedThreadPool 可重用固定线程数的线程池，超出的线程会在队列中等待，在Executors类中我们可以找到创建方式： 12345public static ExecutorService newFixedThreadPool(int nThreads) &#123; return new ThreadPoolExecutor(nThreads, nThreads, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue&lt;Runnable&gt;());&#125; CachedThreadPool 是一个根据需要创建线程的线程池。 12345public static ExecutorService newCachedThreadPool() &#123; return new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue&lt;Runnable&gt;()); &#125; SingleThreadExecutor 是使用单个线程工作的线程池。其创建源码如下： 123456public static ExecutorService newSingleThreadExecutor() &#123; return new FinalizableDelegatedExecutorService (new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue&lt;Runnable&gt;()));&#125; ScheduledThreadPool 是一个能实现定时和周期性任务的线程池，它的创建源码如下： 12345678910public static ScheduledExecutorService newScheduledThreadPool(int corePoolSize) &#123; return new ScheduledThreadPoolExecutor(corePoolSize);&#125;public ScheduledThreadPoolExecutor(int corePoolSize) &#123; super(corePoolSize, Integer.MAX_VALUE, DEFAULT_KEEPALIVE_MILLIS, MILLISECONDS, new DelayedWorkQueue());&#125; 合理配置线程池的大小&emsp;&emsp;一般需要根据任务的类型来配置线程池大小： 如果是CPU密集型任务（线程CPU时间所占比例越高，需要越少线程，即CPU密集型任务。 ），就需要尽量压榨CPU，参考值可以设为 NCPU+1； 如果是IO密集型任务（线程等待时间所占比例越高，需要越多线程，即IO密集型任务 ），参考值可以设置为2*NCPU； 具体的设置还需要根据实际情况进行调整，比如可以先将线程池大小设置为参考值，再观察任务运行情况和系统负载、资源利用率来进行适当调整； 最佳线程数目 = ((线程等待时间+线程CPU时间)/线程CPU时间)$*$CPU数目； 比如平均每个线程CPU运行时间为0.5s，而线程等待时间（非CPU运行时间，比如IO）为1.5s，CPU核心数为8，那么根据上面这个公式估算得到：((0.5+1.5)/0.5)$*$8=32； TODO 参考链接]]></content>
+      <categories>
+        <category>Java多线程</category>
+      </categories>
+      <tags>
+        <tag>多线程</tag>
+        <tag>线程池</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ThreadPoolExecutor 参数详解]]></title>
+    <url>%2F2016%2F04%2F21%2FJavaMultiThreadBook%2FMultiThreadChapter3%2F</url>
+    <content type="text"><![CDATA[ThreadPoolExecutor类介绍&emsp;&emsp;]]></content>
+      <categories>
+        <category>Java多线程</category>
+      </categories>
+      <tags>
+        <tag>多线程</tag>
+        <tag>线程池</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ThreadPoolExecutor 参数详解]]></title>
+    <url>%2F2016%2F04%2F21%2FJavaMultiThread%2FThreadPoolExecutor%2F</url>
+    <content type="text"><![CDATA[ThreadPoolExecutor类介绍&emsp;&emsp;]]></content>
+      <categories>
+        <category>Java多线程</category>
+      </categories>
+      <tags>
+        <tag>多线程</tag>
+        <tag>线程池</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ThreadPoolExecutor 参数详解]]></title>
+    <url>%2F2016%2F04%2F21%2FJavaMultiThreadBook%2FMultiThreadChapter4%2F</url>
+    <content type="text"><![CDATA[ThreadPoolExecutor类介绍&emsp;&emsp;]]></content>
+      <categories>
+        <category>Java多线程</category>
+      </categories>
+      <tags>
+        <tag>多线程</tag>
+        <tag>线程池</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaCore（1）]]></title>
+    <url>%2F2015%2F04%2F13%2FJavaCore%2FJava-Core-3%2F</url>
+    <content type="text"><![CDATA[Java核心Java基本语法：Java类和对象：Java集合：Java泛型：Java注解：Java反射：]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaCore（1）]]></title>
+    <url>%2F2015%2F04%2F13%2FJavaCore%2FJava-Core-1%2F</url>
+    <content type="text"><![CDATA[Java核心Java基本语法：Java类和对象：Java集合：Java泛型：Java注解：Java反射：]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaCore（1）]]></title>
+    <url>%2F2015%2F04%2F13%2FJavaCore%2FJava-Core-2%2F</url>
+    <content type="text"><![CDATA[Java核心Java基本语法：Java类和对象：Java集合：Java泛型：Java注解：Java反射：]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaCore（1）]]></title>
+    <url>%2F2015%2F04%2F13%2FJavaCore%2FJava-Core-4%2F</url>
+    <content type="text"><![CDATA[Java核心Java基本语法： Java类和对象：Java集合：Java泛型：Java注解：Java反射：]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java基础系列</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[归并排序（Merge Sort）]]></title>
+    <url>%2F2015%2F03%2F28%2FSortAlogrithms%2FmergeSort%2F</url>
+    <content type="text"><![CDATA[归并排序归并排序（Merge Sort）是建立在归并操作上的一种有效的排序算法,该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，称为二路归并。 归并过程为：比较$a[i]$和$b[j]$的大小，若$a[i]≤b[j]$，则将第一个有序表中的元素$a[i]$复制到$r[k]$中，并令$i$和$k$分别加上$1$；否则将第二个有序表中的元素$b[j]$复制到$r[k]$中，并令$j$和$k$分别加上$1$，如此循环下去，直到其中一个有序表取完，然后再将另一个有序表中剩余的元素复制到$r$中从下标$k$到下标$t$的单元。归并排序的算法我们通常用递归实现，先把待排序区间$[s,t]$以中点二分，接着把左边子区间排序，再把右边子区间排序，最后把左区间和右区间用一次归并操作合并成有序的区间$[s,t]$。 算法思路Selection Sort、Bubble Sort、Insertion Sort is $O(n^2)$ in average case , Merge Sort $O(n log(n))$ in worst case. In this sorting algorithm we use the idea of divide and conquer. We divide the array into two parts, sort them and then merge them to get the elements in ascending or descending order. Merge sorting is done recursively. We take an array and keep dividing from the middle till we get only one element in each halves(sub-array). The we sort the sub-arrays and join (merge) them back to get the final sorted array. 申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列； 设定两个指针，最初位置分别为两个已经排序序列的起始位置； 比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置； 重复步骤3直到某一指针超出序列尾； 将另一序列剩下的所有元素直接复制到合并序列尾 总结： 将两个已排好序的数组合并成一个有序的数组,称之为归并排序； 步骤：遍历两个数组，比较它们的值。谁比较小，谁先放入大数组中，直到数组遍历完成； 算法动态展示 YouTube视频源地址 ; Merge Sort - step by step guide;In this video beg and end are pointing at array index not the value at the array index. 开课老师视频源; MycodeSchool (function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p5vswdxl9.bkt.clouddn.com/mergeSort.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 代码实现方式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889/** * 归并排序 * * @param arrs */ public static void mergeSort(int[] arrs) &#123; if (arrs == null || arrs.length == 0 || arrs.length == 0) &#123; return; &#125; mergeSort(arrs, 0, arrs.length - 1); &#125; /** * 归并排序核心部分(递归调用) * * @param arrs * @param left * @param right */ private static void mergeSort(int[] arrs, int left, int right) &#123; //如果只有一个元素就不用排序 if (left == right) &#123; return; &#125; else &#123; //取消中间数，进行拆分 int middle = (left + right) / 2; //左边的数不断进行拆分 mergeSort(arrs, left, middle); //右边的数不断进行拆分 mergeSort(arrs, middle + 1, right); //合并 merge(arrs, left, middle + 1, right); &#125; &#125; /** * 合并数组 * * @param arrs * @param left 指向数组第一个元素 * @param middle 指向数组分隔的元素 * @param right 指向数组最后的元素 */ private static void merge(int[] arrs, int left, int middle, int right) &#123; //左边的数组大小 int[] leftArrs = new int[middle - left]; //右边的数组大小 int[] rightArrs = new int[right - middle + 1]; //往这两个数组填充数据 for (int i = left; i &lt; middle; i++) &#123; leftArrs[i - left] = arrs[i]; &#125; for (int i = middle; i &lt;= right; i++) &#123; rightArrs[i - middle] = arrs[i]; &#125; int i = 0, j = 0; //arrs数组的第一个元素 int k = left; //比较两个数组的值，哪个小，就往数组上放 while (i &lt; leftArrs.length &amp;&amp; j &lt; rightArrs.length) &#123; //谁比较小，谁将元素放入大数组中，移动指针，继续比较下一个 if (leftArrs[i] &lt; rightArrs[j]) &#123; arrs[k] = leftArrs[i]; i++; k++; &#125; else &#123; arrs[k] = rightArrs[j]; j++; k++; &#125; &#125; //如果左边的数组还没比较完，右边的数都已经完了，那么将左边的数抄到大数组中(剩下的都是大数字) while (i &lt; leftArrs.length) &#123; arrs[k] = leftArrs[i]; i++; k++; &#125; //如果右边的数组还没比较晚，左边的数都已经完了，那么将右边的数抄到大数组中(剩下的都是大数字) while (j &lt; rightArrs.length) &#123; arrs[k] = rightArrs[j]; k++; j++; &#125; &#125; 参考地址：归并排序Demo代码地址：Github]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[基数排序（Radix Sort）]]></title>
+    <url>%2F2015%2F03%2F27%2FSortAlogrithms%2FradixSort%2F</url>
+    <content type="text"><![CDATA[基数排序基数排序(radix sort)属于”分配式排序”(distribution sort)，又称”桶子法”(bucket sort)或bin sort，将要排序的元素分配至某些”桶”中，藉以达到排序的作用，基数排序法是属于稳定性的排序，其时间复杂度为$O(n log(r)m)$，其中$r$为所采取的基数，而$m$为堆数，空间复杂度$O(N)$，在某些时候，基数排序法的效率高于其它的稳定性排序法。基数排序是按照分配，回收（分配到不同的位置上，然后回收）...不断分配...回收来进行排序，直到有序...。 算法思路It is a sorting algorithm that is used to sort numbers. We sort the numbers from least significant digit to the most significant digit. When we are sorting the numbers we will first find the number of digits in the biggest number. If there are N digits in the biggest number then we will need to perform N number of pass. We will pad the remaining numbers with leading zeros so they all have N digits. Then we will take 10 buckets labeled 0 to 9 and sort the numbers. After the sorting is complete we will remove the leading zeros. 基数排序的要点就两个： 分配：按照元素的大小来放入不同的桶子里； 回收：将桶子里的元素按桶子顺序重新放到数组中； 重复…..两个步骤； 基数排序对有负数和0的数列难以进行排序 算法动态展示 YouTube视频源地址 ; Radix Sort - step by step guide; 开课老师视频源; (function(){var player = new DPlayer({"container":document.getElementById("dplayer6"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p5vswdxl9.bkt.clouddn.com/QQ20180403-113850-HD.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 代码实现方式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556/** * 基数排序 * * @param arrs */ public static void radixSort(int[] arrs) &#123; int max = findMax(arrs, 0, arrs.length - 1); //需要遍历的次数由数组最大的位数来决定 for (int i = 1; max / i &gt; 0; i = i * 10) &#123; int[][] buckets = new int[arrs.length][10]; //获取每一个数字（个、十、百、千位...分配到桶子里） for (int j = 0; j &lt; arrs.length; j++) &#123; int num = (arrs[j] / i) % 10; //将其放入桶子里 buckets[j][num] = arrs[j]; &#125; //回收桶子里的元素 int k = 0; //有10个桶子 for (int j = 0; j &lt; 10; j++) &#123; //对每个桶子里的元素进行回收 for (int l = 0; l &lt; arrs.length; l++) &#123; //如果桶子里有元素就回收(数据会初始化为0) if (buckets[l][j] != 0) &#123; arrs[k++] = buckets[l][j]; &#125; &#125; &#125; &#125; &#125; /** * 递归找出数组最大值 * * @param arrs 数组 * @param left 左边界，第一个数 * @param right 右边界，数组长度 * @return */ public static int findMax(int[] arrs, int left, int right) &#123; //若该数组只有一个数，那么最大的就是该数组第一个值 if (left == right) &#123; return arrs[left]; &#125; else &#123; int leftValue = arrs[left]; //找出所有元素中的最大值 int rightvalue = findMax(arrs, left + 1, right); if (leftValue &gt; rightvalue) &#123; return leftValue; &#125; else &#123; return rightvalue; &#125; &#125; &#125; 参考地址：基数排序Demo代码地址：Github]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[计数排序（Counting Sort）]]></title>
+    <url>%2F2015%2F03%2F27%2FSortAlogrithms%2FcountingSort%2F</url>
+    <content type="text"><![CDATA[计数排序计数排序是一种稳定的线性时间排序算法。计数排序使用一个额外的数组 $C$ ，其中第i个元素是待排序数组 $A$中值等于 $i$ 的元素的个数。然后根据数组 $C$ 来将 $A$ 中的元素排到正确的位置。当输入的元素是 $n$ 个 $0$到 $k$ 之间的整数时，它的运行时间是 $\Theta (n+k)$ 。计数排序不是比较排序，排序的速度快于任何比较排序算法。由于用来计数的数组$C$ 的长度取决于待排序数组中数据的范围（等于待排序数组的最大值与最小值的差加上 $1$），这使得计数排序对于数据范围很大的数组，需要大量时间和内存。例如：计数排序是用来排序$0$到 $100$ 之间的数字的最好的算法，但是它不适合按字母顺序排序人名。但是，计数排序可以用在基数排序算法中，能够更有效的排序数据范围很大的数组。 计数排序(Counting Sort)是一种$O(n)$的排序算法，其思路是开一个长度为$maxValue-minValue+1$的数组，然后分配。扫描一遍原始数组，以当前值$-minValue$作为下标，将该下标的计数器增$1$。 收集。扫描一遍计数器数组，按顺序把值收集起来。 计数排序本质上是一种特殊的桶排序，当桶的个数最大的时候，就是计数排序。 算法思路Counting sort is a sorting technique based on keys between a specific range, it works by counting the number of objects having distinct key values.Then doing some arithmetic to calculate the position of each object in the output sequence. Create a count array to store the count of each unique object; Initially the count of all elements is zero ; Count each elements in the given array and place the count at the appropriate index; Modify the count array by adding the previous counts; Corresponding values represent the places in the count array; We place the objects in their correct positions and decrease the count by one; 翻译 找出待排序的中最大元素和最小元素； 统计数组中每个值为 $i$ 的元素出现的次数，存入数组 $C$的第$i$项； 对所有的技术累加（ $C$ 中的第一个元素开始，每一项和前一项相加）； 反向填充目标数组；将每个元素 $i$ i放在新数组的第$C[i]$项，每放一个元素就将 $C[i]$减去$1$ ； 算法动态展示 YouTube视频源地址 ; Counting Sort - step by step guide; (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p5vswdxl9.bkt.clouddn.com/QQ20180402-174913-HD.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 代码实现方式1234567891011121314151617181920212223242526272829303132333435363738/** * 计数排序 * * @param arrs */ public static void countingSort(int[] arrs) &#123; int[] copyData = Arrays.copyOf(arrs, arrs.length); int maxValue = arrs[0]; int minValue = arrs[0]; for (int i = 0; i &lt; copyData.length; i++) &#123; if (copyData[i] &gt; maxValue) &#123; maxValue = copyData[i]; &#125; if (copyData[i] &lt; minValue) &#123; minValue = copyData[i]; &#125; &#125; int range = maxValue - minValue + 1; int[] counts = new int[range]; Arrays.fill(counts, 0); // 计算数组中每个值和最小值的差，并计数 for (int arr : copyData) &#123; counts[arr - minValue]++; &#125; // 得到数组中大于某个数的值一共有多少个 for (int i = 1; i &lt; counts.length; i++) &#123; counts[i] = counts[i] + counts[i - 1]; &#125; // 根据数量放置值，每放置一个，对应的值的数量减一 for (int i = 0; i &lt; copyData.length; i++) &#123; int index = copyData[i] - minValue; arrs[counts[index] - 1] = copyData[i]; counts[index]--; &#125; &#125; 参考地址：计数排序Demo代码地址：Github]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[希尔排序（Shell Sort）]]></title>
+    <url>%2F2015%2F03%2F25%2FSortAlogrithms%2FshellSort%2F</url>
+    <content type="text"><![CDATA[希尔排序希尔排序也称为递减增量排序算法，是插入排序的一种更高效的改进版本。希尔排序是非稳定排序算法。希尔排序是基于插入排序的一下两点性质而提出改进方法的： 插入排序在对几乎已经安排好序的数据操作时，效率高，即可达到线性排序的效率 插入排序一般来说是抵消的，因为插入排序每次只能将数据移动一位从专业的角度上讲，将一个序列分成好几个序列，用一个数来表示：那个数称为增量。显然的是，增量是不断递减的(直到增量为$1$) 希尔排序的平均复杂度是$O(N*logN)~O(N^2)$，最好的情况$O(N^1.3)$，最坏的情况$O(N^2)$；空间复杂度$O(1)$;不稳定算法 算法思路In this sorting algorithm we compare elements that are distant apart rather than adjacent. Shell sort is like insertion sort. We start by comparing elements that are at a certain distance apart.So if there are N elements then we start with a value gap &lt; N In each pass we keep reducing the value of gap till we reach the last pass when gap is 1 Note!, when gap = 1,shell sort is like insertion sort and we will have sorted elements at the end of this pass; 算法动态展示 YouTube视频源地址 ; Shell Sort - step by step guide; 开课老师视频源; (function(){var player = new DPlayer({"container":document.getElementById("dplayer5"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p5vswdxl9.bkt.clouddn.com/QQ20180328-201843-HD.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 代码实现方式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889/** * 希尔排序 * * @param arrs */ public static void shellSort(int[] arrs) &#123; if (arrs == null || arrs.length == 0) &#123; return; &#125; //增量 每次都 gap/2 gap为每次外循环的步长 //当 步长为 1 即增量为1 时， 希尔排序蜕化为 简单插入排序 int counterFrequency = 0; for (int gap = (int) Math.floor(arrs.length / 2); gap &gt; 0; gap /= 2) &#123; counterFrequency++; System.out.println("------------------1.Outerloop start---------------------"); System.out.println(MessageFormat.format("--------1.Increment:&#123;0&#125;, outerloop frequency:&#123;1&#125;---------", gap, counterFrequency)); for (int i = gap; i &lt; arrs.length; i++) &#123; int j = i; int temp = arrs[j]; // j - step 就是代表与它同组隔壁的元素 内层增量 gap通过 j-gap确定左边 int counterSwapJGap = 0; while (j - gap &gt;= 0 &amp;&amp; arrs[j - gap] &gt; temp) &#123; arrs[j] = arrs[j - gap]; j = j - gap; counterSwapJGap++; printArr("--------------1. arrs:&#123;0&#125;---------------",arrs); &#125; printArr("--------------2. arrs:&#123;0&#125;---------------",arrs); System.out.println(MessageFormat.format("------------------3.Whileloop counter:&#123;0&#125;---------------------", counterSwapJGap)); arrs[j] = temp; System.out.println(MessageFormat.format("--------2.Innerloop: i:&#123;0&#125;, j:&#123;1&#125; , temp:&#123;2&#125; ---------", i, j, temp)); &#125; System.out.println("------------------1.Outerloop over---------------------"); &#125; &#125; //对比简单插入排序 /** * 简单插入排序 * * @param arrs */ public static void insertSortDemo(int arrs[]) &#123; int len = arrs.length; for (int i = 1; i &lt; len; i++) &#123; for (int j = i; j &lt; len - 1; j--) &#123; if (arrs[j] &lt; arrs[j - 1]) &#123; int temp = arrs[j]; arrs[j] = arrs[j - 1]; arrs[j - 1] = temp; &#125; &#125; &#125; &#125; / /** * 打印数组 * * @param str * @param arrs */ private static void printArr(String str, int[] arrs) &#123; String result = ""; StringBuilder sb = new StringBuilder(); if (str != null) &#123; sb.append("["); for (int i = 0; i &lt; arrs.length; i++) &#123; sb.append("," + arrs[i]); &#125; sb.append("]"); result = sb.toString().replaceFirst(",", ""); result = MessageFormat.format(str, result); &#125; else &#123; sb.append("["); for (int i = 0; i &lt; arrs.length; i++) &#123; sb.append("," + arrs[i]); &#125; sb.append("]"); result = sb.toString().replaceFirst(",", ""); &#125; System.out.println("result:" + result); &#125; 参考地址：希尔排序Demo代码地址：Github]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[堆排序（Heap Sort）]]></title>
+    <url>%2F2015%2F03%2F24%2FSortAlogrithms%2FheapSort%2F</url>
+    <content type="text"><![CDATA[堆排序堆排序是利用堆这种数据结构而设计的一种排序算法，堆排序是一种选择排序，它的最坏，最好，平均时间复杂度均为O(nlogn)，它也是不稳定排序。堆是具有以下性质的完全二叉树：每个结点的值都大于或等于其左右孩子结点的值，称为大顶堆；或者每个结点的值都小于或等于其左右孩子结点的值，称为小顶堆。大堆小堆图例：简单来说：堆排序是将数据看成是完全二叉树、根据完全二叉树的特性来进行排序的一种算法。最大堆要求节点的元素都要不小于其孩子，最小堆要求节点元素都不大于其左右孩子。那么处于最大堆的根节点的元素一定是这个堆中的最大值。完全二叉树有个特性：左边子节点位置 = 当前父节点的两倍 + 1，右边子节点位置 = 当前父节点的两倍 + 2点击参考文章 算法思路这里我们讨论最大堆：当前每个父节点都大于子节点。In this Algorithm we first build the heap using the given elements, We create a Max Heap to sort the elements in ascending order , Once the heap iscreated we swap the root node with the last node an delete the last node from the heap。 Build a heap we need transform it into to a max heap ; Create a Max heap (this Max heap parent node is always greater than or equal to child nodes); Remove the node ,in anther way :Swap first and last node and delete the last node from heap; Repeat the 1,2,3 step ,always build the max heap; 算法动态展示： YouTube视频源地址 Heap Sort - step by step guide; (function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p5vswdxl9.bkt.clouddn.com/QQ20180328-140208-HD.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 代码实现方式(关键节点添加输出标注，可自行追踪执行过程)123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081/** * 堆排序 * * @param arrs */ public static void heapSort(int[] arrs) &#123; if (arrs == null || arrs.length == 0) &#123; return; &#125; int len = arrs.length; //循环建立最大堆 for (int i = 0; i &lt; len; i++) &#123; System.out.println(MessageFormat.format("1. heapSort: i,&#123;0&#125; j,&#123;1&#125;", i, len - 1)); System.out.println("--------------1. buildMaxHeap start--------------"); buildMaxHeap(arrs, len - i); //交换堆顶和最后一个元素 int temp = arrs[0]; arrs[0] = arrs[len - 1 - i]; arrs[len - 1 - i] = temp; System.out.println("--------------1. buildMaxHeap over--------------"); &#125; &#125; /** * 完成最大堆建立 * * @param arrs * @param len */ private static void buildMaxHeap(int[] arrs, int len) &#123; System.out.println("--------------2. buildMaxHeap method start--------------"); System.out.println(MessageFormat.format("--------------2. params:&#123;0&#125;--------------",len)); for (int j = (int) Math.floor(len / 2); j &gt;= 0; j--) &#123; heapify(arrs, j, len); &#125; &#125; /** * 建立堆 (大顶堆方式) * * @param arrs 完全二叉树 * @param currentRooNode 当前父节点位置 * @param length 节点总数 */ private static void heapify(int[] arrs, int currentRooNode, int length) &#123; System.out.println("--------------3. heapify method start--------------"); System.out.println(MessageFormat.format("--------------3. params:&#123;0&#125;,&#123;1&#125;-------------", currentRooNode, length)); if (currentRooNode &lt; length) &#123; //左叶子结点 位置 int left = 2 * currentRooNode + 1; //右叶子结点 位置 int right = 2 * currentRooNode + 2; int max = currentRooNode; if (left &lt; length) &#123; //如果当前根节点的 左叶子节点元素值较大，记录它的位置 if (arrs[max] &lt; arrs[left]) &#123; max = left; &#125; &#125; if (right &lt; length) &#123; //如果当前根节点的 右叶子节点元素值较大，记录它的位置 if (arrs[max] &lt; arrs[right]) &#123; max = right; &#125; &#125; //如果最大的不是根元素位置，那么就交换 if (max != currentRooNode) &#123; int temp = arrs[max]; arrs[max] = arrs[currentRooNode]; arrs[currentRooNode] = temp; //继续比较，直到完成一次建堆 heapify(arrs, max, length); &#125; &#125; System.out.println("--------------3. heapify method over--------------"); &#125; 参考地址：堆排序Demo代码地址：Github]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[快速排序（Quick Sort）]]></title>
+    <url>%2F2015%2F03%2F24%2FSortAlogrithms%2FquickSort%2F</url>
+    <content type="text"><![CDATA[快速排序快速排序是冒泡排序的改进版，是最好的一种内排序，面试会经常被问到，是程序员必须掌握的。 算法思路快速排一般基于递归实现： 选定一个合适的值（理想情况中值最好。实现中一般使用数组第一个值），称为“枢轴”（pivot）。 基于这个值，将数组分为两部分，较小的分在左边，较大的分在右边。 一轮下来，这个枢轴的位置一定在最终位置上。 对两个子数组分别重复上述过程，直到每个数组只有一个元素。 排序完成。 快速排序示意图：图例过程演示（中文原视频地址）： (function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p5vswdxl9.bkt.clouddn.com/QQ20180327-124320-HD.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() (function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"theme":"#FADFA3","loop":true,"video":{"url":"http://p5vswdxl9.bkt.clouddn.com/QQ20180327-124538-HD.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 超有趣的快速排序视频 代码实现方式（为了更直观的反映整个排序过程添加了标记代码）：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748private static void quickSort2(int arr[], int left, int right) &#123; //如果left不小于right ，需要排序的部分只有一个元素，方法返回 System.out.println("left:" + left + ",right:" + right); if (left == 0 &amp;&amp; right == 0) &#123; System.out.println("i=j=0"); &#125; System.out.println("1.-------------------"); if (left &gt;= right) &#123; System.out.println(MessageFormat.format("return: left,&#123;0&#125; | right,&#123;1&#125;", left, right)); return; &#125; //设置最左边元素为基准点：pivot int pivot = arr[left]; System.out.println("pivot:" + pivot); int i = left; int j = right; //把要排序的序列中比p大的放到右边，比p小的放到左边，p的下标位置为i while (i &lt; j) &#123; System.out.println("2.-------start------------"); while (i &lt; j &amp;&amp; arr[j] &gt;= pivot) &#123; j--; System.out.println("2. j:" + j); &#125; System.out.println("========[j-- over, i++ start ]=========="); while (i &lt; j &amp;&amp; arr[i] &lt;= pivot) &#123; i++; System.out.println("2. i:" + i); &#125; System.out.println("2.-------end------------"); if (i &lt; j) &#123; int temp = arr[i]; arr[i] = arr[j]; arr[j] = temp; &#125; &#125; //交换基准点 arr[left] = arr[i]; arr[i] = pivot; //对序列中，i左边的元素实施快速排序 System.out.println("左边开始前， right为" + right + "值"); quickSort2(arr, left, i - 1); //对序列中，j右边边的元素实施快速排序 System.out.println("右块遍历开始...... "); quickSort2(arr, i + 1, right); System.out.println("left =:" + (i + 1) + ",right = " + right); System.out.println("3.-------------------"); System.out.println("4.---------all over----------"); 12345678910111213public static void quickSort(int[] arr) &#123; //大数据量测试 int[] arr = new int[100000]; Random r = new Random(); for (int i = 0; i &lt; arr.length; i++) &#123; arr[i] = r.nextInt(10000000); &#125; long start = System.currentTimeMillis(); quickSort(nums); long time = System.currentTimeMillis() - start; System.out.println("-----------大数据量测试结果-----------"); System.out.println("all time:" + time + "毫秒"); &#125; 参考地址 快速排序就这么简单 Github代码Demo]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[排序算法之线性排序]]></title>
+    <url>%2F2015%2F03%2F22%2FSortAlogrithms%2Flinear%2F</url>
+    <content type="text"><![CDATA[线性排序：计数排序 、桶排序 、基数排序 这三种排序算法都利用了桶的概念，但对桶的使用方法上有明显差异： 基数排序：根据键值的每位数字来分配桶；计数排序：每个桶只存储单一键值；桶排序：每个桶存储一定范围的数值； 计数排序：计数排序的核心在于将输入的数据值转化为键存储在额外开辟的数组空间中。作为一种线性时间复杂度的排序，计数排序要求输入的数据必须是有确定范围的整数。基本思想 遍历流程图例 代码实现1234567891011121314151617181920212223242526272829303132333435private static int[] counterSort(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return arr; &#125; int maxValue = getMaxValue(arr); return countingSort(arr, maxValue); &#125; private static int[] countingSort(int[] arr, int maxValue) &#123; int bucketLen = maxValue + 1; int[] bucket = new int[bucketLen]; for (int value : arr) &#123; bucket[value]++; &#125; int sortedIndex = 0; for (int j = 0; j &lt; bucketLen; j++) &#123; while (bucket[j] &gt; 0) &#123; arr[sortedIndex++] = j; bucket[j]--; &#125; &#125; return arr; &#125; private static int getMaxValue(int[] arr) &#123; int maxValue = arr[0]; for (int value : arr) &#123; if (maxValue &lt; value) &#123; maxValue = value; &#125; &#125; return maxValue; &#125; 桶排序：桶排序是计数排序的升级版。它利用了函数的映射关系，高效与否的关键就在于这个映射函数的确定。为了使桶排序更加高效，我们需要做到这两点： 在额外空间充足的情况下，尽量增大桶的数量 使用的映射函数能够将输入的 N 个数据均匀的分配到 K 个桶中同时，对于桶中元素的排序，选择何种比较排序算法对于性能的影响至关重要。 基本思想 类似计数排序 遍历流程图例 代码实现1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980//桶值大小 private static int BUCKET_SIZE = 5; private static int[] bucketSort(int[] arr) &#123; if (arr.length == 0) &#123; return arr; &#125; int minValue = arr[0]; int maxValue = arr[0]; for (int value : arr) &#123; if (value &lt; minValue) &#123; minValue = value; &#125; else if (value &gt; maxValue) &#123; maxValue = value; &#125; &#125; int bucketCount = (int) Math.floor((maxValue - minValue) / BUCKET_SIZE) + 1; int[][] buckets = new int[bucketCount][0]; // 利用映射函数将数据分配到各个桶中 for (int i = 0; i &lt; arr.length; i++) &#123; int index = (int) Math.floor((arr[i] - minValue) / BUCKET_SIZE); buckets[index] = arrAppend(buckets[index], arr[i]); &#125; int arrIndex = 0; for (int[] bucket : buckets) &#123; if (bucket.length &lt;= 0) &#123; continue; &#125; // 对每个桶进行排序，这里使用了插入排序 bucket = insertSort(bucket); for (int value : bucket) &#123; arr[arrIndex++] = value; &#125; &#125; return arr; &#125; /** * 自动扩容，并保存数据 * * @param arr * @param value */ private static int[] arrAppend(int[] arr, int value) &#123; arr = Arrays.copyOf(arr, arr.length + 1); arr[arr.length - 1] = value; return arr; &#125; /** * 插入排序 * * @param arr * @return */ public static int[] insertSort(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return arr; &#125; // 从下标为1的元素开始选择合适的位置插入，因为下标为0的只有一个元素，默认是有序的 for (int i = 1; i &lt; arr.length; i++) &#123; // 从已经排序的序列最右边的开始比较，找到比其小的数 int j = i; // 记录要插入的数据 int tmp = arr[i]; while (j &gt; 0 &amp;&amp; tmp &lt; arr[j - 1]) &#123; arr[j] = arr[j - 1]; j--; &#125; // 存在比其小的数，插入 if (j != i) &#123; arr[j] = tmp; &#125; &#125; return arr; &#125; 基数排序：基数排序是一种非比较型整数排序算法，其原理是将整数按位数切割成不同的数字，然后按每个位数分别比较。由于整数也可以表达字符串（比如名字或日期）和特定格式的浮点数，所以基数排序也不是只能使用于整数。基本思想 基数排序：通过序列中各个元素的值，对排序的N个元素进行若干趟的“分配”与“收集”来实现排序； 分配：我们将L[i]中的元素取出，首先确定其个位上的数字，根据该数字分配到与之序号相同的桶中； 收集：当序列中所有的元素都分配到对应的桶中，再按照顺序依次将桶中的元素收集形成新的一个待排序列L[]；对新形成的序列L[]重复执行分配和收集元素中的十位、百位…直到分配完该序列中的最高位，则排序结束； 根据上述“基数排序”的展示，我们可以清楚的看到整个实现的过程 LSD基数排序遍历流程图例 代码实现123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475private static int[] radixSort(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return arr; &#125; int maxDigit = getMaxDigit(arr); return radixSort(arr, maxDigit); &#125; /** * 获取最高位数 */ private static int getMaxDigit(int[] arr) &#123; int maxValue = getMaxValue(arr); return getNumLenght(maxValue); &#125; private static int getNumLenght(long num) &#123; if (num == 0) &#123; return 1; &#125; int lenght = 0; for (long temp = num; temp != 0; temp /= 10) &#123; lenght++; &#125; return lenght; &#125; private static int[] radixSort(int[] arr, int maxDigit) &#123; int mod = 10; int dev = 1; for (int i = 0; i &lt; maxDigit; i++, dev *= 10, mod *= 10) &#123; // 考虑负数的情况，这里扩展一倍队列数，其中 [0-9]对应负数，[10-19]对应正数 (bucket + 10) int[][] counter = new int[mod * 2][0]; for (int j = 0; j &lt; arr.length; j++) &#123; int bucket = ((arr[j] % mod) / dev) + mod; counter[bucket] = arrayAppend(counter[bucket], arr[j]); &#125; int pos = 0; for (int[] bucket : counter) &#123; for (int value : bucket) &#123; arr[pos++] = value; &#125; &#125; &#125; return arr; &#125; /** * 自动扩容，并保存数据 * * @param arr * @param value */ private static int[] arrayAppend(int[] arr, int value) &#123; arr = Arrays.copyOf(arr, arr.length + 1); arr[arr.length - 1] = value; return arr; &#125; private static int getMaxValue(int[] arr) &#123; int maxValue = arr[0]; for (int value : arr) &#123; if (maxValue &lt; value) &#123; maxValue = value; &#125; &#125; return maxValue; &#125;]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[排序算法之归并排序]]></title>
+    <url>%2F2015%2F03%2F18%2FSortAlogrithms%2Fdivision-recursion%2F</url>
+    <content type="text"><![CDATA[分治递归思想排序： 归并排序：归并排序（Merge sort）是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。作为一种典型的分而治之思想的算法应用，归并排序的实现由两种方法： 自上而下的递归（所有递归的方法都可以用迭代重写，所以就有了第 2 种方法）；自下而上的迭代； 基本思想 申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列； 设定两个指针，最初位置分别为两个已经排序序列的起始位置； 比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置； 重复步骤 3 直到某一指针达到序列尾； 将另一序列剩下的所有元素直接复制到合并序列尾。 遍历流程图例 代码实现12345678910111213141516171819202122232425262728293031323334353637383940414243private static int[] merger2Sort(int[] arr) &#123; if (null == arr || arr.length == 0 || arr.length &lt; 2) &#123; return arr; &#125; return sort(arr);&#125;private static int[] sort(int[] arr) &#123; if (arr.length &lt; 2) &#123; return arr; &#125; int middle = (int) Math.floor(arr.length / 2); int[] left = Arrays.copyOfRange(arr, 0, middle); int[] right = Arrays.copyOfRange(arr, middle, arr.length); return merge(sort(left), sort(right));&#125;private static int[] merge(int[] left, int[] right) &#123; int[] result = new int[left.length + right.length]; int i = 0; while (left.length &gt; 0 &amp;&amp; right.length &gt; 0) &#123; if (left[0] &lt;= right[0]) &#123; result[i++] = left[0]; left = Arrays.copyOfRange(left, 1, left.length); &#125; else &#123; result[i++] = right[0]; right = Arrays.copyOfRange(right, 1, right.length); &#125; &#125; while (left.length &gt; 0) &#123; result[i++] = left[0]; left = Arrays.copyOfRange(left, 1, left.length); &#125; while (right.length &gt; 0) &#123; result[i++] = right[0]; right = Arrays.copyOfRange(right, 1, right.length); &#125; return result;&#125; 归并排序是稳定排序，它也是一种十分高效的排序，能利用完全二叉树特性的排序一般性能都不会太差。java中Arrays.sort()采用了一种名为TimSort的排序算法，就是归并排序的优化版本。从上文的图中可看出，每次合并操作的平均时间复杂度为O(n)，而完全二叉树的深度为|log2n|。总的平均时间复杂度为O(nlogn)。而且，归并排序的最好，最坏，平均时间复杂度均为O(nlogn)。 Demo代码地址：Github]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[排序算法之高效排序]]></title>
+    <url>%2F2015%2F03%2F16%2FSortAlogrithms%2Fhigh-efficiency%2F</url>
+    <content type="text"><![CDATA[高效排序快速排序 、堆排序 、希尔排序 快速排序： 快速排序是由东尼·霍尔所发展的一种排序算法。在平均状况下，排序 n 个项目要 Ο(nlogn) 次比较。在最坏状况下则需要 Ο(n2) 次比较，但这种状况并不常见。事实上，快速排序通常明显比其他 Ο(nlogn) 算法更快，因为它的内部循环（inner loop）可以在大部分的架构上很有效率地被实现出来。快速排序使用分治法（Divide and conquer）策略来把一个串行（list）分为两个子串行（sub-lists）。 快速排序又是一种分而治之思想在排序算法上的典型应用。本质上来看，快速排序应该算是在冒泡排序基础上的递归分治法。快速排序的名字起的是简单粗暴，因为听到这个名字你就知道它存在的意义，就是快而且效率高！它是处理大数据最快的排序算法之一了。虽然 Worst Case 的时间复杂度达到了 O(n²)，但是人家就是优秀，在大多数情况下都比平均时间复杂度为 O(n logn) 的排序算法表现要更好。 基本思想 从数列中挑出一个元素，称为 “基准”(pivot); 重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面(相同的数可以到任一边)。在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区(partition)操作()； 递归地(recursive)把小于基准值元素的子数列和大于基准值元素的子数列排序； 递归的最底部情形，是数列的大小是零或一，也就是永远都已经被排序好了。虽然一直递归下去，但是这个算法总会退出，因为在每次的迭代（iteration）中，它至少会把一个元素摆到它最后的位置去。 遍历流程图例 代码实现1234567891011121314151617181920212223242526272829public static void quickSort(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return; &#125; quickSort(arr, 0, arr.length - 1); &#125; private static int[] quickSort(int[] arr, int left, int right) &#123; if (left &lt; right) &#123; int partitionIndex = partition(arr, left, right); quickSort(arr, left, partitionIndex - 1); quickSort(arr, partitionIndex + 1, right); &#125; return arr; &#125; private static int partition(int[] arr, int left, int right) &#123; //设定基准值(pivot) int pivot = left; int index = pivot + 1; for (int i = index; i &lt;= right; i++) &#123; if (arr[i] &lt; arr[pivot]) &#123; SwapUtils.swap(arr, i, index); index++; &#125; &#125; SwapUtils.swap(arr, pivot, index - 1); return index - 1; &#125; 快速排序的最坏运行情况是 O(n²)，比如说顺序数列的快排。但它的平摊期望时间是 O(nlogn)，且 O(nlogn) 记号中隐含的常数因子很小，比复杂度稳定等于 O(nlogn) 的归并排序要小很多。所以，对绝大多数顺序性较弱的随机数列而言，快速排序总是优于归并排序。 堆排序： 堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。堆排序可以说是一种利用堆的概念来排序的选择排序。分为两种方法： 大顶堆：每个节点的值都大于或等于其子节点的值，在堆排序算法中用于升序排列；小顶堆：每个节点的值都小于或等于其子节点的值，在堆排序算法中用于降序排列；将待排序序列构造成一个大顶堆，此时，整个序列的最大值就是堆顶的根节点。将其与末尾元素进行交换，此时末尾就为最大值。然后将剩余n-1个元素重新构造成一个堆，这样会得到n个元素的次小值。如此反复执行，便能得到一个有序序列了。 基本思想 创建一个堆 H[0……n-1]； 把堆首（最大值）和堆尾互换； 把堆的尺寸缩小 1，并调用 shift_down(0)，目的是把新的数组顶端数据调整到相应位置； 重复步骤2，直到堆的尺寸为 1。 遍历流程图例 代码实现123456789101112131415161718192021222324252627282930313233343536373839404142public static void heapSort(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return; &#125; int len = arr.length; buildMaxHeap(arr, len); for (int i = len - 1; i &gt; 0; i--) &#123; SwapUtils.swap(arr, 0, i); len--; heapify(arr, 0, len); &#125; &#125; private static void buildMaxHeap(int[] arr, int len) &#123; for (int i = (int) Math.floor(len / 2); i &gt;= 0; i--) &#123; heapify(arr, i, len); &#125; &#125; private static void heapify(int[] arr, int i, int len) &#123; int left = 2 * i + 1; int right = 2 * i + 2; int largest = i; if (left &lt; len &amp;&amp; arr[left] &gt; arr[largest]) &#123; largest = left; &#125; if (right &lt; len &amp;&amp; arr[right] &gt; arr[largest]) &#123; largest = right; &#125; if (largest != i) &#123; SwapUtils.swap(arr, i, largest); heapify(arr, largest, len); &#125; &#125; 堆排序的平均时间复杂度为 Ο(nlogn)。 希尔排序： 希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。希尔排序是基于插入排序的以下两点性质而提出改进方法的：插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率；但插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位；希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。 基本思想 选择一个增量序列t1，t2，……，tk，其中ti &gt; tj,tk = 1； 按增量序列个数 k，对序列进行 k 趟排序； 每趟排序，根据对应的增量 ti，将待排序列分割成若干长度为 m 的子序列，分别对各子表进行直接插入排序。仅增量因子为 1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。 算法先将要排序的一组数按某个增量d（n/2,n为要排序数的个数）分成若干组，每组中记录的下标相差d.对每组中全部元素进行直接插入排序，然后再用一个较小的增量（d/2）对它进行分组，在每组中再进行直接插入排序。当增量减到1时，进行直接插入排序后，排序完成。 遍历流程图例代码实现1234567891011121314151617181920212223242526272829303132333435363738394041424344454647/** * 希尔排序 针对有序序列在插入时采用交换法 * * @param arr */ private static void shellSort(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return; &#125; //增量gap，并逐步缩小增量 for (int gap = arr.length / 2; gap &gt; 0; gap /= 2) &#123; //从第gap个元素，逐个对其所在组进行直接插入排序操作 for (int i = gap; i &lt; arr.length; i++) &#123; int j = i; while (j - gap &gt;= 0 &amp;&amp; arr[j] &lt; arr[j - gap]) &#123; SwapUtils.swap(arr, j, j - gap); j -= gap; &#125; &#125; &#125; &#125; /** * 希尔排序 针对有序序列在插入时采用移动法。 * * @param arr */ private static void shellSort2(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return; &#125; //增量gap，并逐步缩小增量 for (int gap = arr.length / 2; gap &gt; 0; gap /= 2) &#123; //从第gap个元素，逐个对其所在组进行直接插入排序操作 for (int i = gap; i &lt; arr.length; i++) &#123; int j = i; int temp = arr[j]; while (j - gap &gt;= 0 &amp;&amp; arr[j] &lt; arr[j - gap]) &#123; //移动法 arr[j] = arr[j - gap]; j -= gap; &#125; arr[j] = temp; &#125; &#125; &#125; 希尔排序中对于增量序列的选择十分重要，直接影响到希尔排序的性能。我们上面选择的增量序列{n/2,(n/2)/2…1}(希尔增量)，其最坏时间复杂度依然为O(n2)，一些经过优化的增量序列如Hibbard经过复杂证明可使得最坏时间复杂度为O(n3/2)。]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[排序算法之简单排序]]></title>
+    <url>%2F2015%2F03%2F14%2FSortAlogrithms%2Fsimple-sort%2F</url>
+    <content type="text"><![CDATA[简单排序冒泡排序 、选择排序 、插入排序 公共代码部分1234567891011121314151617181920212223public class SwapUtils &#123; public static void swap(int[] arr, int i, int j) &#123; int temp = arr[i]; arr[i] = arr[j]; arr[j] = temp; &#125; public static void printArrays(int[] arrs) &#123; StringBuilder sb = new StringBuilder(); if (null == arrs || arrs.length == 0) &#123; System.out.println("Is Empty!"); return; &#125; for (int i = 0; i &lt; arrs.length; i++) &#123; sb.append("," + arrs[i]); &#125; String toPring = sb.append(" ]").toString().replaceFirst(",", ""); System.out.println(toPring); &#125;&#125; 冒泡排序：冒泡排序（Bubble Sort）是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。基本思想 比较相邻的元素。如果第一个比第二个大，就交换他们两个； 对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对进行循环遍历。最后的元素会是最大的数； 针对所有的元素重复以上的步骤，除了最后一个； 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。 遍历流程图例 代码实现123456789101112131415public static void bubbleSort(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return; &#125; //i控制外循环即总共需要将多少个数字进行排序， //j控制内循环即每次循环都会将最大的数排到右边 for (int i = 0; i &lt; arr.length - 1; i++) &#123; for (int j = 0; j &lt; arr.length - i - 1; j++) &#123; //如果前面的数字大于后面的数字就将前面的数字和后面的数字进行交换，直接最大的数字被排到最右侧 if (arr[j] &gt; arr[j + 1]) &#123; SwapUtils.swap(arr, j + 1, j); &#125; &#125; &#125;&#125; 冒泡排序的时间复杂度为O(n²) 最快：当输入的数据已经是正序时（都已经是正序了，冒泡排序有何用）。最慢：当输入的数据是反序时（写一个 for 循环反序输出数据不就行了，干嘛要用你冒泡排序呢，我是闲的吗）。 选择排序：选择排序是一种简单直观的排序算法，无论什么数据进去都是 O(n²) 的时间复杂度。所以用到它的时候，数据规模越小越好。唯一的好处不占用额外的内存空间。基本思想 首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置； 再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾； 重复第二步，直到遍历完所有元素，且均排序完毕为止。 遍历流程图例 代码实现1234567891011121314151617181920public static void selectSort(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return; &#125; // 每一趟循环比较时，min用于存放较小元素的数组下标， // 这样当前批次比较完毕最终存放的就是此趟内最小的元素的下标，避免每次遇到较小元素都要进行交换。 for (int i = 0; i &lt; arr.length - 1; i++) &#123; int min = i; for (int j = i + 1; j &lt; arr.length; j++) &#123; if (arr[j] &lt; arr[min]) &#123; min = j; &#125; &#125; if (min != i) &#123; SwapUtils.swap(arr, min, i); &#125; &#125; &#125; 选择排序是一种简单直观的排序算法，无论什么数据进去都是 O(n²) 的时间复杂度。所以用到它的时候，数据规模越小越好。唯一的好处可能就是不占用额外的内存空间。 插入排序：插入排序的代码实现虽然没有冒泡排序和选择排序那么简单粗暴，但它的原理应该是最容易理解的，因为只要打过扑克牌的人都应该能够秒懂。插入排序是一种最简单直观的排序算法，它的工作原理是通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。基本思想 将第一待排序序列的第一个元素作为一个有序序列，把第二个元素到最后一个元素当成是未排序序列； 从头到尾依次扫描未排序序列，将扫描到的每个元素插入有序序列的适当位置。（如果待插入的元素与有序序列中的某个元素相等，则将待插入元素插入到相等元素的后面） 遍历流程图例 代码实现123456789101112131415161718192021public static void insertSort(int[] arr) &#123; if (null == arr || arr.length == 0) &#123; return; &#125; // 从下标为1的元素开始选择合适的位置插入， // 因为下标为0的只有一个元素，默认是有序的 for (int i = 1; i &lt; arr.length; i++) &#123; // 记录要插入的数据 int tmp = arr[i]; int j = i; // 从已经排序的序列最右边的开始比较，找到比其小的数 while (j &gt; 0 &amp;&amp; tmp &lt; arr[j - 1]) &#123; arr[j] = arr[j - 1]; j--; &#125; // 存在比其小的数，插入 if (j != i) &#123; arr[j] = tmp; &#125; &#125; &#125; 插入排序和冒泡排序一样，也有一种优化算法，叫做拆半插入。时间复杂度为O(n²)，是稳定的排序。 Demo代码地址：Github]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[排序算法]]></title>
+    <url>%2F2015%2F03%2F13%2FSortAlogrithms%2Fsort-algorithm%2F</url>
+    <content type="text"><![CDATA[排序算法分类&emsp;&emsp;&emsp;排序算法从排序的效率上分类，主要分四类： 简单排序：冒泡排序 、(直接)选择排序 、(直接)插入排序 ； 高效排序：快速排序 、堆排序 、希尔排序 ； 分治递归思想实现的排序：递归排序 ； 线性排序：计数排序 、桶排序 、基数排序 ； &emsp;&emsp;&emsp;排序算法从排序的方式分类，主要分为五类： 插入排序：直接插入排序 、希尔排序 ； 选择排序：直接选择排序 、堆排序 ； 交换排序：冒泡排序 、快速排序 ； 线性排序：计数排序 、基数排序 、桶排序 ； 递归排序：归并排序 ； 关于时间复杂度： 平方阶 (O(n2)) 排序 各类简单排序：直接插入、直接选择和冒泡排序。 线性对数阶 (O(nlog2n)) 排序 快速排序、堆排序和归并排序； O(n1+§)) 排序，§ 是介于 0 和 1 之间的常数。 希尔排序 线性阶 (O(n)) 排序 基数排序，此外还有桶、箱排序。 关于稳定性 ： 稳定的排序算法：冒泡排序、插入排序、归并排序和基数排序。 不是稳定的排序算法：选择排序、快速排序、希尔排序、堆排序。 名词解释 ： n：数据规模 k：“桶”的个数 In-place：占用常数内存，不占用额外内存 Out-place：占用额外内存 稳定性：排序后 2 个相等键值的顺序和排序之前它们的顺序相同 排序的10种算法如下图例： &emsp;&emsp;&emsp;后续有关博文主要从排序效率上讲解以上4类排序中共10种排序算法思以及使用Java语言的算法实现。 简单排序 高效排序 归并排序 线性排序 参考： 八大基础排序总结 十大经典排序算法 Demo代码地址]]></content>
+      <categories>
+        <category>Algorithms</category>
+      </categories>
+      <tags>
+        <tag>Algorithms</tag>
+        <tag>Sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[博客简介]]></title>
+    <url>%2F2014%2F07%2F22%2Ffirstblog%2F</url>
+    <content type="text"><![CDATA[个人博客简介&emsp;&emsp;&emsp;&emsp;作为一枚计科专业的码农，2014年开始从事后端应用开发至今，将日常工作中遇到的问题、个人知识积累、个人见解和“打怪升级”晋级的经验分享于自己的博客，欢迎广大蜀黍来此博客分享自己的“故事”。 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;ZhangSunny]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>小记</tag>
+      </tags>
+  </entry>
+</search>

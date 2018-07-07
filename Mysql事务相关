@@ -1,0 +1,43 @@
+参考：
+mysql之锁与事务 https://juejin.im/post/5ab5e44a6fb9a028c97a013d
+
+https://segmentfault.com/a/1190000008935924
+https://blog.csdn.net/lemon89/article/details/51477497
+https://segmentfault.com/a/1190000012773157
+https://crossoverjie.top/2017/07/09/SSM15/
+
+
+乐观锁 https://juejin.im/post/5a803e61f265da4e914b5b63
+MySQL乐观锁在分布式场景下的实践 https://segmentfault.com/a/1190000008935924
+深入理解乐观锁与悲观锁 http://www.importnew.com/21037.html
+
+
+
+Mac下查看网络端口占用情况:https://blog.csdn.net/themagickeyjianan/article/details/72900904
+
+
+http://music.163.com/#/m/song?id=31587891
+
+乐观锁与悲观锁的实际应用 https://juejin.im/post/5962e64c6fb9a06ba14b9cd9
+MySQL乐观锁在分布式场景下的实践  https://segmentfault.com/a/1190000008935924
+mysql的锁--行锁，表锁，乐观锁，悲观锁 https://www.cnblogs.com/deliver/p/5730616.html
+深入分析CAS（乐观锁）https://juejin.im/post/5a803e61f265da4e914b5b63
+MySQL中的共享锁与排他锁 http://www.hollischuang.com/archives/923
+深入理解乐观锁与悲观锁 http://www.importnew.com/21037.html
+mysql之锁与事务 https://juejin.im/post/5ab5e44a6fb9a028c97a013d
+分布式系统的CAP理论  http://www.hollischuang.com/archives/666
+Java开发必装的IntelliJ IDEA插件 http://www.hollischuang.com/archives/966
+Java开发必会的Linux命令 http://www.hollischuang.com/archives/800
+数据库的锁机制 http://www.hollischuang.com/archives/909
+深入理解乐观锁与悲观锁 http://www.hollischuang.com/archives/934
+乐观锁与悲观锁 http://www.digpage.com/lock.html
+想进大厂？50个多线程面试题，你会多少？（一）   https://juejin.im/post/5aae4e8f6fb9a028e52d9e8c
+
+《成神之路-基础篇》JVM——Java内存相关(已完结) http://www.hollischuang.com/archives/1003
+
+一致性hash1：https://www.jianshu.com/p/e8fb89bb3a61
+一致性hash2：http://coderroc.com/article/%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%95/Consistent-Hashing.html
+
+
+
+http://p5vswdxl9.bkt.clouddn.com/ThreadPoolTaskExecutor.jpg

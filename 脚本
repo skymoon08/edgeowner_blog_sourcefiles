@@ -1,0 +1,22 @@
+
+cd /home/test/
+unset GIT_DIR    
+git config --list
+git pull origin master
+
+git clone ssh://git@106.14.148.54/home/git/hexo.git
+
+
+
+https://git.coding.net/zhangsunny/blogs.git
+
+
+
+git remote add origin git@git.coding.net/zhangsunny/blogs.git
+
+
+
+
+https://nodejs.org/dist/v8.11.1/node-v8.11.1.tar.gz
+
+wget https://nodejs.org/dist/v8.11.1/node-v8.11.1.tar.gz

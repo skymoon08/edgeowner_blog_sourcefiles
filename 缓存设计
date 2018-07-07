@@ -1,0 +1,6 @@
+面试中关于Redis的问题看这篇就够了								https://juejin.im/post/5ad6e4066fb9a028d82c4b66?utm_source=gold_browser_extension
+【原创】分布式之缓存击穿										https://www.cnblogs.com/rjzheng/p/8908073.html
+缓存技术比拼：Redis与Memcached的同与不同						http://developer.51cto.com/art/201603/507980.htm
+深入学习Redis（1）：Redis内存模型								https://juejin.im/entry/5ae2c177f265da0b722ad90b?utm_source=gold_browser_extension
+缓存穿透，缓存击穿，缓存雪崩解决方案分析							https://blog.csdn.net/zeb_perfect/article/details/54135506
+

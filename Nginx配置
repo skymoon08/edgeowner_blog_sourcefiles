@@ -1,0 +1,10 @@
+[root@localhost/]# nginx -s reload
+nginx: [alert] kill(189, 1) failed (3: No such process)  杀死189进程，可是并没有
+[root@localhost /]# whereis ngnix
+ngnix:[root@localhost/]# 
+[root@localhost /]# find / -name nginx 
+/usr/local/src/nginx/sbin/nginx
+[root@localhost /]# find / -name nginx.conf
+/usr/local/src/nginx/conf/nginx.conf
+[root@localhost /]# /usr/local/src/nginx/sbin/nginx -c /usr/local/src/nginx/conf/nginx.conf
+[root@localhost/]# nginx -s reload               

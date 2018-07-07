@@ -1,0 +1,13 @@
+TOMCAT_ID为tomcat的进程号。
+
+1、使用jstack查看jvm堆栈信息
+
+1 ]$ /bin/kill -3 TOMCAT_ID：无法输出到单独的文件中，只能在tomcat的启动文件中打印相关的堆栈信息。
+2 ]$ jstack TOMCAT_ID >> jstack.txt：打印jvm的堆栈信息到单独的文件中。
+2、查看jvm的内存dump信息。
+
+1 ]$ jmap -dump:format=b,file=/data/jmap.txt TOMCAT_ID
+3、增加gc日志
+
+1
+JAVA_OPTS="-Dglobal.config.path=/data/envfile -Xms2500m -Xmx2500m  -XX:PermSize=256m -XX:MaxPermSize=256m -Dfile.encoding=UTF-8 -XX:+UseCMSCompactAtFullCollection -XX:CMSMaxAbortablePrecleanTime=500 -XX:+CMSClassUnloadingEnabled -verbose.gc -XX:+PrintGCDetails  -XX:+HeapDumpOnOutOfMemoryError -Xloggc:/data/tomcat/logs/gc.log -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime"
